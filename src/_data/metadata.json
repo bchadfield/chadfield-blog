@@ -1,0 +1,21 @@
+{
+  "title": "Ben Chadfield's Blog",
+  "url": "https://chadfield.org",
+  "language": "en",
+  "description": "Ben Chadfield's personal blog about Product Management, Leadership, Technology, and Life.",
+  "feed": {
+    "subtitle": "Ben Chadfield's personal blog about Product Management, Leadership, Technology, and Life.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://chadfield.org"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://chadfield.org/feed/feed.json"
+  },
+  "author": {
+    "name": "Ben Chadfield",
+    "email": "benchadfield@gmail.com",
+    "url": "https://chadfield.org/about/"
+  }
+}
