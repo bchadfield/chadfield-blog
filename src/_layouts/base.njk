@@ -1,40 +1,87 @@
-<!doctype html>
-<html lang="{{ metadata.language }}">
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or metadata.title }}</title>
-    <meta name="description" content="{{ description or metadata.description }}">
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-    {#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+    <!-- title -->
+    <title>
+      {% if seo.title %} {{ seo.title }}
+      {% elif title %}
+      {{ title }}
+      {% else %}
+      {{ meta.siteName }}
+      {% endif %}
+    </title>
 
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-diff.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+    <!-- synchronous js / schema  -->
+    {% include "schemas/base-schema.njk" %} {% if schema == 'blog' %}
+    <!-- include blogpost schema  -->
+    {%- include "schemas/blogpost-schema.njk" %} {% endif %}
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    {% if preloads -%}
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="{{ preloads.href }}"
+            as="{{ preloads.as }}"
+            {% if preloads.type %}type={{ preloads.type }}{% endif %}{% if preloads.imagesrcset %}imagesrcset="{{ preloads.imagesrcset }}" {% endif %}
+            {% if preloads.crossorigin %}crossorigin{% endif %} />
+    {% endif %}
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    {% include "partials/meta-info.njk" %}
   </head>
+
   <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    <!-- header -->
+    {% include "partials/header.njk" %}
 
-      {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
-    </header>
+    <!-- content slot -->
+    <main id="main" class="flow">{{ content | safe }}</main>
 
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <!-- footer -->
+    {% include "partials/footer.njk" %}
 
-      {{ content | safe }}
-      
-    </main>
-
-    <footer></footer>
-
-    <!-- Current page: {{ page.url | url }} -->
+    <!-- youtube if actvated in yaml -->
+    {% if youtube %}
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
+    ></script>
+    {% endif %}
   </body>
 </html>

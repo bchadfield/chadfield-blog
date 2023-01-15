@@ -1,3 +1,14 @@
-public/
-node_modules/
-package-lock.json
+# Node modules
+node_modules
+
+# generated files
+dist
+src/_includes/css
+src/_includes/scripts
+
+# cache
+.cache
+
+# secret data
+.env
+

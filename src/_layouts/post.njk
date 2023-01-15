@@ -1,25 +1,19 @@
 ---
 layout: base
-templateClass: tmpl-post
+schema: blog
+preloads:
+  href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
+  as: 'font'
+  type: 'font/woff2'
+  crossorigin: true
 ---
-<h1>{{ title }}</h1>
 
-<time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
-{%- for tag in tags | filterTagList %}
-{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-<a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{%- endfor %}
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
 
-{{ content | safe }}
+    {% set definedDate = date %} {% include "partials/date.njk" %}
 
-{%- if collections.posts %}
-{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-{%- if nextPost or previousPost %}
-<hr>
-<ul>
-  {%- if nextPost %}<li>Next: <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></li>{% endif %}
-  {%- if previousPost %}<li>Previous: <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></li>{% endif %}
-</ul>
-{%- endif %}
-{%- endif %}
+    {{ content | safe }}
+  </div>
+</article>
