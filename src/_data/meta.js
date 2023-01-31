@@ -1,8 +1,8 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Ben Chadfield Blog',
+  siteName: 'Problem First',
   siteDescription:
-    "Ben Chadfield's blog about Product Management, Leadership, Technology, and Life.",
+    'Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
@@ -19,10 +19,9 @@ module.exports = {
     mastodonProfile: '' 
   },
   blog: {
-    // this is for the rss feed
-    name: 'Ben Chadfield Blog',
+    name: 'Problem First',
     description:
-    "Ben Chadfield's blog about Product Management, Leadership, Technology, and Life.",
+    'Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.',
   },
   pagination: {
     itemsPerPage: 20

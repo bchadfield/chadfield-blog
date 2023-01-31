@@ -1,10 +1,10 @@
 {
-  "name": "ben-chadfield-blog",
+  "name": "problem-first-blog",
   "version": "1.0.0",
   "engines": {
     "node": ">=16.x.x"
   },
-  "description": "Ben Chadfield's personal blog",
+  "description": "Problem First Blog",
   "main": ".eleventy.js",
   "scripts": {
     "clean": "rimraf dist",

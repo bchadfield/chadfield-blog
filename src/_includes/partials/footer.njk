@@ -13,9 +13,9 @@
         {% for item in social %}
 
         {% if item.platform == "rss" %}
-        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
+        <a href="{{ meta.url }}{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml" target="_blank">
         {% else %}
-        <a href="{{ item.url }}" rel="me">
+        <a href="{{ item.url }}" rel="me" target="_blank">
           {% endif %}
           <span class="sr-only">{{ item.platform }}</span>
           <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
