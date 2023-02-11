@@ -2,6 +2,7 @@
 title: The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance
 permalink: /work/the-hurdle-to-a-capistrano-deploy-and-setup-on-a-new-micro-ec2-ubuntu-instance/
 date: 2013-01-26
+image: capistrano-deploy.png
 ---
 At the end of last year I set myself the challenge of getting <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> to deploy updates for <a href="https://www.dibbist.com" target="_blank">Dibbist</a>. Two previous attempts had tripped up on the same Rake issues. It was something to do with my server setup and I didn&#8217;t want to start from scratch.
 

@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/how-i-want-to-be-treated-by-brands-on-social-media/
 date: 2012-12-28
+image: treated-by-social-media-brands.png
 ---
 During my honeymoon in Malaysia I was reminded of the way I wanted businesses to act on social media. Brands should be reaching out to consumers to try to keep or steal their loyalty.
 

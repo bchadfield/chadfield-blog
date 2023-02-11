@@ -1,0 +1,12 @@
+    <li class="card clickable-card overflow-hidden">
+      <div class="card-image">
+        <img src="/assets/images/posts/{{ post.data.image }}" />
+      </div>
+      <div class="card-content">
+        <h2>
+          <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        </h2>
+        {% set definedDate = post.date %} {% include "partials/date.njk" %}
+        <p>{{ post.data.description }}</p>
+      </div>
+    </li>

@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/what-i-learnt-from-my-old-boss-that-made-me-quit/
 date: 2013-10-31
+image: lessons-from-old-boss.png
 ---
 I resigned from my job nearly two months ago. We had recently hired someone that could easily step up into the vacancy I was leaving, so I could handover and be out of there quickly. There were lots of reasons for resigning. The main one was that my wife needed more help raising our baby daughter. Spending all that time at work, while my wife was struggling alone just didn&#8217;t make sense.
 

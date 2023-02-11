@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/attaching-pdfs-to-emails-with-prawn-and-rails/
 date: 2013-03-31
+image: attaching-pdfs-rails-prawn.png
 ---
 Yesterday I released a very simple tool to help copywriters get better briefs. I had a couple of days dev time up my sleeve while other parts of the main <a href="http://csworkflow.com" target="_blank">CS Workflow</a> project are getting worked on.
 

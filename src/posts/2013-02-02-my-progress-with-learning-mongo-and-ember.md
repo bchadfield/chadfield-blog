@@ -2,6 +2,7 @@
 title: My progress with learning Mongo and Ember
 permalink: /work/my-progress-with-learning-mongo-and-ember/
 date: 2013-02-02
+image: learning-mongo-ember.png
 ---
 I&#8217;ve spent about 16 hours running through tutorials, reading and rebuilding <a href="http://www.poopee.com.au" target="_blank">Poopee</a>. This post will cover what I&#8217;ve learnt so far and how.
 

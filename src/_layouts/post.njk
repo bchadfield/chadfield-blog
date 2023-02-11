@@ -10,7 +10,10 @@ preloads:
 
 <article class="region blog">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
+    <div class="post-header">
+      <img src="/assets/images/posts/{{ image }}" />
+      <h1>{{ title }}</h1>
+    </div>
 
     {% set definedDate = date %} {% include "partials/date.njk" %}
 

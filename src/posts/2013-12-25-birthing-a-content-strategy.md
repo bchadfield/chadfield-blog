@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/birthing-a-content-strategy/
 date: 2013-12-25
+image: birthing-content-strategy.png
 ---
 *This post is part of a creative, generous effort in the content strategy community called <a target="_blank" href="http://secretsanta.csworkflow.com/">Blog Secret Santa</a>. Many thanks to [Margot Bloomstein][1] for the <a href="https://twitter.com/mbloomstein/status/395969851820220416" target="_blank">germ of the idea</a>, and to Ben Chadfield for taking it to fruition, expanding it into a community of 50 content strategy bloggers. I am honored to have gotten Ben as my Blog Secret Santa outlet! – Currently anonymous guest blogger*
 

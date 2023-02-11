@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/what-i-learnt-from-the-instagram-tos-drama/
 date: 2012-12-19
+image: instagram-tos-drama.png
 ---
 Today a wide range of media jumped on the fact that the new terms seemed allow Instagram to sell your photos to advertisers and keep all the profits. Certain parts of the terms backed up this possibility and caused mass outrage. The key lesson I picked up is that when announcing legal changes to a service the company needs to go through the main changes and address their intent.
 

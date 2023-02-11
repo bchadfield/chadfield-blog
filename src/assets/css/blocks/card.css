@@ -1,9 +1,10 @@
 .card {
   background: var(--color-light);
-  border: 2px solid var(--color-dark);
+  border-top: 3px solid var(--color-dark);
+  border-bottom: 3px solid var(--color-dark);
   color: var(--color-dark);
-  padding: var(--space-m-l);
-  border-radius: var(--border-radius);
+  /* padding: var(--space-m-l); */
+  /* border-radius: var(--border-radius); */
   max-width: unset;
 }
 
@@ -17,8 +18,22 @@
   background: var(--color-secondary);
 }
 
+.card .card-image {
+  max-height: 15em;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+}
+
+.card .card-content {
+  margin: 0;
+  padding: var(--space-l);
+}
+
 .card h2 {
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-2);
 }
 
 .card h2 a,
@@ -32,7 +47,8 @@
 
 .card:hover,
 .card:focus-within {
-  border: 2px solid var(--color-primary);
+  border-top-color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
 }
 
 .card a {

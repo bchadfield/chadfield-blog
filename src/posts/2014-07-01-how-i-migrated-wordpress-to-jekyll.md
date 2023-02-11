@@ -1,7 +1,8 @@
 ---
-title: "How I migrated from Wordpress to Jekyll"
-description: "How I migrated from Wordpress to Jekyll. A deeper explanation of my tweets as I went through the process."
+title: How I migrated from Wordpress to Jekyll
+description: How I migrated from Wordpress to Jekyll. A deeper explanation of my tweets as I went through the process.
 date: 2014-07-01
+image: wordpress-jekyll-migration.png
 ---
 
 **Update:** Tweets no longer exist so links removed

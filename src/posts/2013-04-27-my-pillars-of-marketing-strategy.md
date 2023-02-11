@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/my-pillars-of-marketing-strategy/
 date: 2013-04-27
+image: marketing-strategy-pillars.png
 ---
 I keep coming back to the same three pillars when developing marketing strategies. This is regardless of industry, company size, customer type, and channel. These pillars are awareness, engagement and innovation. There’s nothing complicated or ground-breaking here, just a simple structure I like to work with.
 

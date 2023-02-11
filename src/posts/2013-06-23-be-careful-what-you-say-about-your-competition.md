@@ -4,6 +4,7 @@ author: bcadmin
 layout: post
 permalink: /work/be-careful-what-you-say-about-your-competition/
 date: 2013-06-23
+image: talking-about-competition.png
 ---
 People don’t like it when someone is attacked, especially when the attack seems unjustified or there’s an underdog being attacked. This is a reasonably common human trait that still operates in the world of business.
 

@@ -66,22 +66,15 @@
     {% include "partials/meta-info.njk" %}
   </head>
 
-  <body>
+  <body class="relative">
     <!-- header -->
     {% include "partials/header.njk" %}
 
     <!-- content slot -->
-    <main id="main" class="flow">{{ content | safe }}</main>
+    <main id="main" class="relative">{{ content | safe }}</main>
 
     <!-- footer -->
     {% include "partials/footer.njk" %}
 
-    <!-- youtube if actvated in yaml -->
-    {% if youtube %}
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
-    ></script>
-    {% endif %}
   </body>
 </html>
