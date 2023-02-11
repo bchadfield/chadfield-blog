@@ -15,4 +15,4 @@ This service is inspired by a blog post by my good friend Max Johns about <a hre
 
 The next step is a closed beta to perfect the feature set and process flow. Register you interest to receive an invite.
 
-Feedback is always welcome and I&#8217;d love to hear more stories about your specific review situation. Email me at ben@csworkflow.com
+Feedback is always welcome and I&#8217;d love to hear more stories about your specific review situation.

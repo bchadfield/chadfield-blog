@@ -21,7 +21,7 @@ I found out that through an error message that Rails 4 already has the PDF mimet
 
 I rendered a test PDF in the browser so I could make sure it looked how I wanted before attaching it to an email. Refreshing the browser displayed the changes. To get this working I created a ‘test’ action in my briefs controller and added that as a route.
 
-```ruby
+```elixir
 def test
   @brief = Brief.new(test_brief)
   @user = User.find_by_email("ben@csworkflow.com")
@@ -42,7 +42,7 @@ The biggest “gotcha” I came across was with using bounding boxes and text bo
 
 The mailer is the simplest part of the whole process.
 
-```ruby
+```elixir
 def send_brief(brief, user)
   @brief = brief
   @user = user

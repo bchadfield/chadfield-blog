@@ -19,8 +19,6 @@ Engagement covers all conversion and satisfaction-focused activities. Engagement
 
 Innovation is the positive reminder to solve my own problems. It’s very easy to copy what competitors are doing or what was in an article someone successful wrote. Common wisdom and current trends only go so far. Creativity and rigorous scientific execution are the next level shit.
 
-&nbsp;
-
 All very straight-forward. It’s all about answering these questions:
 
 *   How will new people find out about my company?

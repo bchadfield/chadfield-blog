@@ -1,5 +1,5 @@
 ---
-title: 'PeepCode&#8217;s Ember tutorial is essential'
+title: PeepCode's Ember tutorial is essential
 permalink: /work/peepcodes-ember-tutorial-is-essential/
 date: 2013-02-16
 ---
