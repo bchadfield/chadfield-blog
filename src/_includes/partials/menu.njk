@@ -6,15 +6,16 @@
         class="nav"
         href="{{ item.url }}"
         {{
-        helpers.getLinkActiveState(item.url,
-        page.url)
-        |
-        safe
+          helpers.getLinkActiveState(item.url, page.url) | safe
         }}
         >{{ item.text }}</a
       >
     </li>
     {% endfor %}
+    <li>
+      Ben Chadfield
+    </li>
+    <li><img class="avatar" src="/assets/images/bc-face.jpg" /></li>
   </ul>
 </nav>
 

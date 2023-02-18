@@ -1,0 +1,418 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+      How I migrated from Wordpress to Jekyll
+      
+    </title>
+
+    <!-- synchronous js / schema  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://chadfield.org#website",
+        "url": "https://chadfield.org",
+        "name": "Problem First",
+        "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    <!-- include blogpost schema  --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "https://chadfield.org#website"
+    },
+    "@id": "",
+    "headline": "How I migrated from Wordpress to Jekyll",
+    "description": "How I migrated from Wordpress to Jekyll. A deeper explanation of my tweets as I went through the process.",
+    "image": "https://chadfield.org/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Ben Chadfield",
+      "url": "https://chadfield.org"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ben Chadfield"
+    },
+    "datePublished": "2014-07-01T00:00:00.000Z"
+  }
+</script>
+ 
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?71d0-8858-1bd4" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2"
+            as="font"
+            type=font/woff2
+            crossorigin />
+    
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?71d0-8858-1bd4" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/work/how-i-migrated-from-wordpress-to-jekyll/" />
+
+<meta
+  name="description"
+  content="
+  
+  How I migrated from Wordpress to Jekyll. A deeper explanation of my tweets as I went through the process.
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="https://chadfield.org/work/how-i-migrated-from-wordpress-to-jekyll/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="https://chadfield.org/work/how-i-migrated-from-wordpress-to-jekyll/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="How I migrated from Wordpress to Jekyll"
+/>
+<meta
+  property="og:image"
+  content="https://chadfield.org/assets/images/opengraph-default.jpg"
+/>
+<meta
+  property="og:description"
+  content="How I migrated from Wordpress to Jekyll. A deeper explanation of my tweets as I went through the process."
+/>
+<meta property="og:site_name" content="Problem First" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Ben Chadfield" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛸</text></svg>">
+  </head>
+
+  <body class="relative">
+    <!-- header -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="relative" role="banner">
+  <div class="site-head | ontop spot-color-primary">
+    
+   <a href="/" class="logo site-head__brand | no-underline" >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+          clip-rule="evenodd"
+        />
+      </svg>
+
+      Problem First
+    </a>
+
+    <nav id="mainnav" class="navbar" aria-label="Main">
+  <ul>
+    
+    <li>
+      Ben Chadfield
+    </li>
+    <li><img class="avatar" src="/assets/images/bc-face.jpg" /></li>
+  </ul>
+</nav>
+
+<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+<template id="burger-template">
+  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <span>Menu</span>
+    <svg width="24" height="24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+</template>
+
+  </div>
+</header>
+
+
+    <!-- content slot -->
+    <main id="main" class="relative">
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <div class="post-header">
+      <img src="/assets/images/posts/wordpress-jekyll-migration.png" />
+      <h1>How I migrated from Wordpress to Jekyll</h1>
+    </div>
+
+     <time datetime="2014-07-01T00:00:00.000Z">
+  July 1, 2014
+</time>
+
+
+    <p><strong>Update:</strong> Tweets no longer exist so links removed</p>
+<p>Last weekend I migrated my personal blog from <a href="http://wordpress.org" target="_blank" rel="noopener">Wordpress</a> to <a href="http://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>. I tweeted as I went to keep some sort of record of what I'd done and the decisions I'd made. I also hoped that anyone else wanting to do the same thing would find it helpful.</p>
+<p>It all started because GoDaddy reminded me that my hosting was about to expire. I'd been using Jekyll for the CS Workflow site and loved it.</p>
+<blockquote>
+<p>The hosting on <a href="http://t.co/0WqTirL8Vw" target="_blank" rel="noopener">http://t.co/0WqTirL8Vw</a> is about to expire so today<br>
+I’ll be migrating from wordpress to jekyll and hosting on github</p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<p>That last part about hosting on Github isn't true. I hosted it on the <a href="http://csworkflow.com" target="_blank" rel="noopener">CS Workflow</a> server.</p>
+<h3 id="what-is-jekyll-and-why-use-it"><a class="heading-anchor" href="#what-is-jekyll-and-why-use-it">What is Jekyll and why use it?</a></h3>
+<p>Jekyll is a static site generator. A static site doesn't use any server side processing. Web browsers can easily handle static HTML, CSS, and Javascript. You've seen this in action if you have ever double-clicked a .html file on your desktop and had it opened in your browser.</p>
+<p>Jekyll uses a template, processing rules, and content to generate a static site. Each page of the site has its .html file. The HTML file, along with the stylesheets, scripts, and images, can be uploaded to any web server. There are tons of <a href="https://www.google.com.au/search?q=hosting+static+website" target="_blank" rel="noopener">ways to host static sites</a> and almost all of them are free.</p>
+<p>Wordpress, in comparison, uses PHP and MySQL to generate HTML each time a Wordpress page is viewed. The template is filled with content from the database, which is displayed by the browser. This only takes a few hundredths of a second.</p>
+<p>Wordpress makes having a website really easy, especially is you use <a href="http://wordpress.com" target="_blank" rel="noopener">Wordpress.com</a> and don't worry about your own hosting. Almost everything can be managed through the web-based admin console. You can be completely removed from everything technical, like HTML markup and installing plugins. Wordpress and platforms like it have allowed millions of people with no web development skills to have their own websites. That's a great thing!</p>
+<p>Why bother with Jekyll then? Jekyll is faster. The site will be faster to use. Getting a new site setup is faster. Oh, and it supports Markdown by default. I love faster and I love Markdown, but the main reason I love Jekyll is that it puts me in total control over my entire site. I have instant access to style, layout, and content in a single text editor. I'm using <a href="https://atom.io/" target="_blank" rel="noopener">Atom</a> for my text editor at the moment, which I completely recommend.</p>
+<p>It's totally a preference thing and there is a skills barrier to Jekyll, so it's not for everyone.</p>
+<h3 id="exporting-from-wordpress"><a class="heading-anchor" href="#exporting-from-wordpress">Exporting from Wordpress</a></h3>
+<p>Let's get on with it. The migration starts with exporting my content from Wordpress. I'd seen in Jekyll's documentation that there is support for migrating. I started there, but the documentation wasn't very thorough and I imagined using their method would waste time.</p>
+<blockquote>
+<p>Jekyll’s migration docs for wordpress make me think there will be lots<br>
+of messing around with exporting importing <a href="http://t.co/Zc74OpukEI" target="_blank" rel="noopener">http://t.co/Zc74OpukEI</a></p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<p>Off to google to find a good guide. I didn't want to spend a lot of time or energy on this migration, so a good tutorial saves both. I recommend the <a href="http://girliemac.com/blog/2013/12/27/wordpress-to-jekyll/" target="_blank" rel="noopener">how-to guide on girliemac.com</a>. This is what I followed. I'll assume your also using that as a reference and only chime in if I have something to add.</p>
+<blockquote>
+<p>This looks like a good how-to guide. I would have forgotten about<br>
+exporting comments. <a href="http://t.co/jIh9JmyHCW" target="_blank" rel="noopener">http://t.co/jIh9JmyHCW</a></p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<p>One of the first steps was to export comments to Disqus. I didn't have many comments, but I wanted to keep the few I had. I hadn't setup Disqus on a site before. It took than 3 minutes to complete the steps, going by the twitter timestamps.</p>
+<p>Disqus had updated its export/import method and it was even easier that the way shown in the tutorial. Imports are queued and it took a few hours before mine were processed.</p>
+<blockquote>
+<p>Disqus is set up already. So easy. They’ve improved the exporting<br>
+support so there are steps in the how-to I can skip.</p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<p>Jekyll's Wordpress exporter accessed the database remotely. The tutorial uses <a href="https://github.com/benbalter/wordpress-to-jekyll-exporter" target="_blank" rel="noopener">wordpress-to-jekyll-exporter</a>, a Wordpress plugin. This plugin isn't searchable in the Wordpress plugin directory. I uploaded the plugin zip file to the plugin folder using FTP. Then I used the plugin installer in my Wordpress admin console to unzip, install, and activate the plugin.</p>
+<blockquote>
+<p>Wordpress to jekyll exporter plugin installed. Export done in one<br>
+click! <a href="https://t.co/NiWVXZIlhX" target="_blank" rel="noopener">https://t.co/NiWVXZIlhX</a></p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<p>The export was done with one click on the 'Export to Jekyll' link in the Wordpress console. This exported my posts and pages to Markdown. It also added any uploaded media to the export.</p>
+<p>My only issue was that it used the .md Markdown extension instead of .markdown, which I prefer. I used the view/edit method in Filezilla and did a find and replace in the plugin file to change the .md to .markdown. I tried to use the plugin editor in the Wordpress console, but it went crazy when I tried to save the changes.</p>
+<blockquote>
+<p>The plugin uses .md instead of .markdown which I prefer. I’ve edited<br>
+the plugin and exported again (in one click!)</p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<blockquote>
+<p>All exported now to work on the template. I’ll use CS Workflow’s<br>
+preview template builder to get the markup and css.<br>
+<a href="http://t.co/o9tY5rJQCz" target="_blank" rel="noopener">http://t.co/o9tY5rJQCz</a></p>
+<p>— Ben Chadfield (@benchadfield) June 28, 2014</p>
+</blockquote>
+<h3 id="setting-up-jekyll"><a class="heading-anchor" href="#setting-up-jekyll">Setting up Jekyll</a></h3>
+<p>I didn't export my template. I decided to redesign instead. This is where I wasted the most time. I looked at theme sites for inspiration.</p>
+<p>I can't remember what I searched for, but I found <a href="http://getpoole.com/" target="_blank" rel="noopener">Poole</a>, a Jekyll start kit built by Mark Otto of Bootstrap fame. Poole already looks pretty good, but has two themes. I used the <a href="http://hyde.getpoole.com/" target="_blank" rel="noopener">Hyde</a> theme, which I made a few changes to.</p>
+<ul class="list">
+<li>Made the post header an H1. Originally it was an H2 with the site title (on the left column) always an H1.</li>
+<li>Changed the blog roll pagination directory from /page2/ to page/2/.</li>
+<li>Removed the pages menu from the left column. I only had the home page, so this was unnecessary.</li>
+<li>Removed the special font from the site title in the left and just went with the standard PT Sans.</li>
+<li>Added an avatar image for myself.</li>
+<li>Added social icons with links.</li>
+<li>Changed the related posts header from H3 to H4.</li>
+<li>Added a background cover image for the left column. I got the image from <a href="http://nos.twnsnd.co/" target="_blank" rel="noopener">this awesome photo resource</a>.</li>
+<li>Increased the font size of the post headers.</li>
+<li>Added a little clock icon next to the post dates.</li>
+</ul>
+<p>I think that's it. All I needed to do was to copy and paste the export Markdown files into the <code>_posts</code> directory and run <code>jekyll build</code>.</p>
+<blockquote>
+<p>I went with Poole with the Hyde as a Jekyll foundation.<br>
+<a href="http://t.co/LB89E46M0s" target="_blank" rel="noopener">http://t.co/LB89E46M0s</a></p>
+<p>— Ben Chadfield (@benchadfield) June 29, 2014</p>
+</blockquote>
+<p>I needed to host the site myself because there are a few restrictions to hosting on Github. The main one that stopped me going with that option is not being able to use plugins. I use two plugins. The first is to <a href="https://github.com/markets/jekyll-timeago" target="_blank" rel="noopener">figure out how old</a> my daughter is. This is displayed in my bio in the left column. Jekyll uses <a href="http://docs.shopify.com/themes/liquid-basics" target="_blank" rel="noopener">Liquid templates</a>, but doesn't come with a timeago filter as standard. The second plugin is <a href="https://github.com/ixti/jekyll-assets" target="_blank" rel="noopener">jekyll-assets</a>, which compiles the different stylesheets into a single, minified, gzipped, and cache-busting css file. This makes loading for the first time even faster.</p>
+<p>To start, I created a new Github repository called <a href="https://github.com/bchadfield/chadfield-blog" target="_blank" rel="noopener">chadfield-blog</a>. This gives me cloud-hosted source control using git. Github also makes deploying changes really easy. To get the site on to the server I sshed in and ran <code>git clone https://github.com/bchadfield/chadfield-blog.git</code> from the directory I wanted to serve the site from. To get any future updates I run <code>git pull</code>.</p>
+<p>By default Jekyll generates the site in the <code>_site</code> folder. For CS Workflow I'd set the build destination to a different directory which used its own git repository. This time I kept the source and generated site together.</p>
+<p>The trade off of managing a single repository is that I'm deploying the source files to the web server and not just the static site. I point the web server to <code>/chadfield-blog/_site</code> instead of <code>/chadfield-blog</code> and have a few extra kilobytes on the server.</p>
+<p>All I needed to do was add the site to the Nginx config, restart Nginx, and point the domain name at the server IP address.</p>
+<pre class="language-nginx"><code class="language-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span><br> <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">server_name</span> www.chadfield.org</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">rewrite</span> ^ http://chadfield.org<span class="token variable">$request_uri?</span> permanent</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span><br> <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">server_name</span> chadfield.org</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">root</span> /home/deployer/chadfield-blog/_site</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">index</span> index.html</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><br>> Finished migrating my Wordpress blog to Jekyll. Here’s the result<br>> [http://t.co/mh7jjG3fpk][30]<br>><br>> — Ben Chadfield (@benchadfield) [June 29, 2014][31]<br><br><span class="token comment">###  Publishing workflow</span><br><br>Obviously, the steps to get new content published is different to Wordpress. I\'ll lay out the steps needs and what I\'ve done to make it easier.<br><br>1.  Write a new post.<br>2.  Create a new Markdown file in the `_posts` folder.<br>3.  Add meta-data and content to the Markdown file.<br>4.  Run `jekyll serve` and test locally that everything is okay.<br>5.  Commit changes to git using `git add -A`.<br>6.  Push local git repository to Github using `git push origin master`.<br>7.  ssh into the server and run `git pull` in the site directory.<br>8.  Check on my site that the changes are okay.<br><br>I automate steps 5, 6, and 7 using a rakefile. I use [CS Workflow][5] to write, get reviews, and export meta-data to Markdown.<br><br>```ruby<br>desc "Commit changes to website repo"<br>task :commit do<br>	puts "Committing..."<br>  exec "git add -A &amp;&amp; git commit -m 'Site update' &amp;&amp; git push origin master"<br>end<br><br>desc "Update code in production"<br>	task :update do<br>  puts "Updating production..."<br>  exec "ssh user@server.com 'cd site-directory &amp;&amp; git pull'"<br>end</code></pre>
+<p>To use that copy into <code>rakefile.rb</code> and change the ssh details and site directory. Then all I need to do is run <code>rake commit</code> and <code>rake update</code>.</p>
+<p>Hopefully you found that helpful. There’s plenty of gaps, which is why I’ve called it titled it as how I migrated rather than a general how to. Really there’s not much to improve on the how to I referenced. Feel free to ask any questions or offer improvements I could make.</p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  </div>
+</article>
+</main>
+
+    <!-- footer -->
+    
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Problem First</a>
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+        
+        <a href="https://www.linkedin.com/in/benchadfield/" rel="me" target="_blank">
+          
+          <span class="sr-only">linkedin</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+  ></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://github.com/bchadfield" rel="me" target="_blank">
+          
+          <span class="sr-only">github</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://chadfield.org/feed.xml" rel="alternate" type="application/rss+xml" target="_blank">
+        
+          <span class="sr-only">rss</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+  </body>
+</html>

@@ -3,6 +3,7 @@ title: Blog Secret Santa's problems from last year and this year's fixes
 description: Blog Secret Santa had a few issues last year that we're fixing this year to make it easier to run and be a part of.
 date: 2014-11-19
 image: bss-problems-fixes.png
+permalink: /work/blog-secret-santas-problems-from-last-year-and-this-years-fixes/
 ---
 
 

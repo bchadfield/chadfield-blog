@@ -112,3 +112,9 @@ header svg {
 nav.navbar [aria-expanded='true'] svg {
   transform: var(--nav-list-rotate, rotate(45deg));
 }
+
+nav.navbar img.avatar {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}

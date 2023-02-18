@@ -1,4 +1,5 @@
 .site-head {
+  padding: 0 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

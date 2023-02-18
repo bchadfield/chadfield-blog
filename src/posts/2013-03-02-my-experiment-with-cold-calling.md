@@ -2,6 +2,7 @@
 title: My experiment with cold calling
 date: 2013-03-02
 image: cold-calling-experiment.png
+permalink: /work/my-experiment-with-cold-calling/
 ---
 My first real product was launched last year. <a href="https://www.dibbist.com" target="_blank">Dibbist</a> is an online appointment system for small businesses. I’ve failed to attract any subscribers and I know all the reasons why. I’ll do an more in depth post about what I did wrong. This post is about my cold calling experiment for Dibbist.
 
