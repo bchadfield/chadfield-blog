@@ -1,0 +1,31 @@
+.blog .post-header {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.blog .post-header h1 {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--color-light)
+}
+.blog h1 {
+  font-size: var(--size-step-4);
+}
+
+.blog h2 {
+  font-size: var(--size-step-3);
+}
+
+.blog h3 {
+  font-size: var(--size-step-2);
+}
+.blog img {
+  width: 100%;
+  height: auto;
+}
+.blog time {
+  opacity: 0.8;
+}

@@ -1,3 +1,12 @@
-*.DS_Store
-Rakefile
-.asset-cache
+# Node modules
+node_modules
+
+# generated files
+src/_includes/css
+src/_includes/scripts
+
+# cache
+.cache
+
+# secret data
+.env

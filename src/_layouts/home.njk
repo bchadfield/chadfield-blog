@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<header class="section spot-color-primary">
+  <div class="section__inner">
+    <div class="wrapper flow region">
+      <h1 class="text-center">Blog</h1>
+    </div>
+  </div>
+  {% include 'svg/divider-pixels.svg' %}
+</header>
+
+<article class="wrapper region">
+  <ul class="grid mt-l-xl" role="list" data-layout="50-50">
+    {% set postslist = collections.posts %} {% for post in postslist %}
+
+      {% include "partials/blog-card.njk" %}
+
+    {% endfor %}
+  </ul>
+</article>

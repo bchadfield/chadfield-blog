@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+      My progress with learning Mongo and Ember
+      
+    </title>
+
+    <!-- synchronous js / schema  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://chadfield.org#website",
+        "url": "https://chadfield.org",
+        "name": "Problem First",
+        "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    <!-- include blogpost schema  --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "https://chadfield.org#website"
+    },
+    "@id": "",
+    "headline": "My progress with learning Mongo and Ember",
+    "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+    "image": "https://chadfield.org/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Ben Chadfield",
+      "url": "https://chadfield.org"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ben Chadfield"
+    },
+    "datePublished": "2013-02-02T00:00:00.000Z"
+  }
+</script>
+ 
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?3aaa-ee52-6dbc" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2"
+            as="font"
+            type=font/woff2
+            crossorigin />
+    
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?3aaa-ee52-6dbc" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/work/my-progress-with-learning-mongo-and-ember/" />
+
+<meta
+  name="description"
+  content="
+  
+  Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="https://chadfield.org/work/my-progress-with-learning-mongo-and-ember/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="https://chadfield.org/work/my-progress-with-learning-mongo-and-ember/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="My progress with learning Mongo and Ember"
+/>
+<meta
+  property="og:image"
+  content="https://chadfield.org/assets/images/opengraph-default.jpg"
+/>
+<meta
+  property="og:description"
+  content="Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life."
+/>
+<meta property="og:site_name" content="Problem First" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Ben Chadfield" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛸</text></svg>">
+  </head>
+
+  <body class="relative">
+    <!-- header -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="relative" role="banner">
+  <div class="site-head | ontop spot-color-primary">
+    
+   <a href="/" class="logo site-head__brand | no-underline" >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+          clip-rule="evenodd"
+        />
+      </svg>
+
+      Problem First
+    </a>
+
+    <nav id="mainnav" class="navbar" aria-label="Main">
+  <ul>
+    
+    <li>
+      Ben Chadfield
+    </li>
+    <li><img class="avatar" src="/assets/images/bc-face.jpg" /></li>
+  </ul>
+</nav>
+
+<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+<template id="burger-template">
+  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <span>Menu</span>
+    <svg width="24" height="24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+</template>
+
+  </div>
+</header>
+
+
+    <!-- content slot -->
+    <main id="main" class="relative">
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <div class="post-header">
+      <img src="/assets/images/posts/learning-mongo-ember.png" />
+      <h1>My progress with learning Mongo and Ember</h1>
+    </div>
+
+     <time datetime="2013-02-02T00:00:00.000Z">
+  February 2, 2013
+</time>
+
+
+    <p>I’ve spent about 16 hours running through tutorials, reading and rebuilding <a href="http://www.poopee.com.au" target="_blank">Poopee</a>. This post will cover what I’ve learnt so far and how.</p>
+<p>Poopee currently uses a MySQL database fronted by PHP that returns XML. The front-end is JQuery. My aim is to rebuild it with Mongo and Ember.</p>
+<h3 id="mongodb"><a class="heading-anchor" href="#mongodb"><a href="http://www.mongodb.org/" target="_blank">MongoDB</a></a></h3>
+<p>I’m comfortable with Mongo. I run through a basic <a href="http://tutorial.mongly.com/tutorial/index" target="_blank">interactive tutorial</a> at <a href="http://mongly.com" target="_blank">Mongly</a>. The main reason I wanted to use Mongo was that it had a simple way to handle <a href="http://docs.mongodb.org/manual/core/geospatial-indexes/" target="_blank">geospatial queries</a>. This was covered by Mongly with a <a href="http://tutorial.mongly.com/geo/index" target="_blank">geospatial tutorial</a>.</p>
+<p>The next step was to learn how to use Mongo as part of an API. <a href="http://coenraets.org/blog/" target="_blank">Christophe Coenraets</a> has a good two-part tutorial on how to build a simple site with <a href="http://nodejs.org/" target="_blank">Node.js</a>, <a href="http://expressjs.com/" target="_blank">Express</a>, Mongo and <a href="http://backbonejs.org/" target="_blank">Backbone</a>. The first part is a good guide on <a href="http://coenraets.org/blog/2012/10/creating-a-rest-api-using-node-js-express-and-mongodb/" target="_blank">building the API</a>, which I followed. The second is really a link to a github repository for the finished product. I used the first post to build the API for Poopee. That included importing the lastest batch of Australian Toilet data. Importing the XML data was the single task that I spent the most time on.</p>
+<h3 id="ember"><a class="heading-anchor" href="#ember"><a href="http://emberjs.com/" target="_blank">Ember</a></a></h3>
+<p>Outside the day and a half I spent on the API, I read about the good, bad and the ugly of pretty much every javascript framework I could find. I settled on Ember as the framework that I’d tackle. Ember is popular enough to have documentation and good tutorials. The decision was a toss-up between <a href="http://angularjs.org/" target="_blank">Angular</a> and Ember. I rejected Angular because I didn’t like the way it extended HTML. I prefer to keep my HTML clean. Obviously, I can change my mind later, once I delve deeper into Ember. It’s highly likely I’ll end up using Backbone for Poopee, because it’s such a straight forward web app.</p>
+<p>So far, I’ve spent my time coming to grips with the new (to me) concepts in Ember. After reading the <a href="http://emberjs.com/guides/" target="_blank">Ember guides</a>, the article/tutorial that I saw recommended was <a href="http://trek.github.com/" target="_blank">Advice on &amp; Instruction in the Use Of Ember.js</a>.</p>
+<p>The next step is to run the <a href="http://reefpoints.dockyard.com/ember/2013/01/07/building-an-ember-app-with-rails-api-part-1.html" target="_blank">Ember and Rails tutorials</a>. The concept that I struggled with was how the API connection worked with the routing. I’m expecting this tutorial to help me understand that.</p>
+
+  </div>
+</article>
+</main>
+
+    <!-- footer -->
+    
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Problem First</a>
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+        
+        <a href="https://www.linkedin.com/in/benchadfield/" rel="me" target="_blank">
+          
+          <span class="sr-only">linkedin</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+  ></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://github.com/bchadfield" rel="me" target="_blank">
+          
+          <span class="sr-only">github</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://chadfield.org/feed.xml" rel="alternate" type="application/rss+xml" target="_blank">
+        
+          <span class="sr-only">rss</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+  </body>
+</html>

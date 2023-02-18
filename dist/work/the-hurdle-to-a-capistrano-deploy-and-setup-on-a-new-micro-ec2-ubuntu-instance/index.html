@@ -1,0 +1,344 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+      The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance
+      
+    </title>
+
+    <!-- synchronous js / schema  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://chadfield.org#website",
+        "url": "https://chadfield.org",
+        "name": "Problem First",
+        "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    <!-- include blogpost schema  --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "https://chadfield.org#website"
+    },
+    "@id": "",
+    "headline": "The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance",
+    "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+    "image": "https://chadfield.org/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Ben Chadfield",
+      "url": "https://chadfield.org"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ben Chadfield"
+    },
+    "datePublished": "2013-01-26T00:00:00.000Z"
+  }
+</script>
+ 
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?bace-bb66-f51f" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2"
+            as="font"
+            type=font/woff2
+            crossorigin />
+    
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?bace-bb66-f51f" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/work/the-hurdle-to-a-capistrano-deploy-and-setup-on-a-new-micro-ec2-ubuntu-instance/" />
+
+<meta
+  name="description"
+  content="
+  
+  Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="https://chadfield.org/work/the-hurdle-to-a-capistrano-deploy-and-setup-on-a-new-micro-ec2-ubuntu-instance/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="https://chadfield.org/work/the-hurdle-to-a-capistrano-deploy-and-setup-on-a-new-micro-ec2-ubuntu-instance/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance"
+/>
+<meta
+  property="og:image"
+  content="https://chadfield.org/assets/images/opengraph-default.jpg"
+/>
+<meta
+  property="og:description"
+  content="Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life."
+/>
+<meta property="og:site_name" content="Problem First" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Ben Chadfield" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛸</text></svg>">
+  </head>
+
+  <body class="relative">
+    <!-- header -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="relative" role="banner">
+  <div class="site-head | ontop spot-color-primary">
+    
+   <a href="/" class="logo site-head__brand | no-underline" >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+          clip-rule="evenodd"
+        />
+      </svg>
+
+      Problem First
+    </a>
+
+    <nav id="mainnav" class="navbar" aria-label="Main">
+  <ul>
+    
+    <li>
+      Ben Chadfield
+    </li>
+    <li><img class="avatar" src="/assets/images/bc-face.jpg" /></li>
+  </ul>
+</nav>
+
+<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+<template id="burger-template">
+  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <span>Menu</span>
+    <svg width="24" height="24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+</template>
+
+  </div>
+</header>
+
+
+    <!-- content slot -->
+    <main id="main" class="relative">
+<article class="region blog">
+  <div class="wrapper flow prose">
+    <div class="post-header">
+      <img src="/assets/images/posts/capistrano-deploy.png" />
+      <h1>The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance</h1>
+    </div>
+
+     <time datetime="2013-01-26T00:00:00.000Z">
+  January 26, 2013
+</time>
+
+
+    <p>At the end of last year I set myself the challenge of getting <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> to deploy updates for <a href="https://www.dibbist.com" target="_blank">Dibbist</a>. Two previous attempts had tripped up on the same Rake issues. It was something to do with my server setup and I didn’t want to start from scratch.</p>
+<p>You may have seen <a href="https://twitter.com/OnlineBen/status/275134571937398784" target="_blank">my tweet</a> announcing that I’d been successful, so you’ll know I go it working. I did for Dibbist and even more recently repeated the same process for another project I’m helping out with. This post isn’t a tutorial on deploying from scratch with Capistrano. I learnt by watching the excellent Railscasts (referenced in my success tweet) about Capistrano. Episode #375 links to the recipes I used. Why no details? These screencasts are part of the paid section of Railscasts and I’m not going to cut someone’s lunch, especially Ryan Bates.</p>
+<p>This post is about the hurdle I faced twice when following the Railscasts process. Obviously to get a Rails app working you need Ruby installed on the server. The problem I found was that the micro instance took ages to install Ruby. The connection to the server would freeze and Capistrano would just sit there waiting forever for the install to finish. If you looked at the instance activity in the AWS console you’d see that the CPU had finished with compiling and installing.</p>
+<p>The solution is to install Ruby manually at the same time you setup the Deployer user. This will still have the issue with the connection freezing, but once the CPU is finished you’re done. Just remove the Ruby install from the recipes and run.</p>
+<p>The setup I’m currently using for Dibbist is:</p>
+<ul class="list">
+<li>EC2 micro instance of Ubuntu 12.04</li>
+<li>Nginx redirecting all to https</li>
+<li>Unicorn with 2 workers</li>
+<li>Postgres</li>
+</ul>
+
+  </div>
+</article>
+</main>
+
+    <!-- footer -->
+    
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2023 <a href="/" >Problem First</a>
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+        
+        <a href="https://www.linkedin.com/in/benchadfield/" rel="me" target="_blank">
+          
+          <span class="sr-only">linkedin</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+  ></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://github.com/bchadfield" rel="me" target="_blank">
+          
+          <span class="sr-only">github</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://chadfield.org/feed.xml" rel="alternate" type="application/rss+xml" target="_blank">
+        
+          <span class="sr-only">rss</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+  </body>
+</html>

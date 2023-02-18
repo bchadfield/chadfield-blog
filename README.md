@@ -1,3 +1,3 @@
-Jekyll source files for [my blog](http://chadfield.org)
+# A blog
 
-Using the [Hyde](https://github.com/poole/hyde) theme from the [Poole](http://getpoole.com/) Jekyll starter.
+It's a blog. It uses [Eleventy](https://www.11ty.dev/) and is based on Lene Saile's [fabulous template](https://github.com/madrilene/eleventy-excellent)

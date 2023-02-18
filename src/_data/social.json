@@ -1,0 +1,17 @@
+[
+  {
+    "platform": "linkedin",
+    "url": "https://www.linkedin.com/in/benchadfield/",
+    "icon": "linkedin.svg"
+  },
+  {
+    "platform": "github",
+    "url": "https://github.com/bchadfield",
+    "icon": "github.svg"
+  },
+  {
+    "platform": "rss",
+    "url": "/feed.xml",
+    "icon": "rss.svg"
+  }
+]

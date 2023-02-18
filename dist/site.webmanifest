@@ -1,0 +1,8 @@
+{
+  "name": "Problem First - Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+  "short_name": "Problem First",
+  "start_url": "https://chadfield.org",
+  "theme_color": "#DD4462",
+  "background_color": "#F3F3F3",
+  "display": "standalone"
+}
