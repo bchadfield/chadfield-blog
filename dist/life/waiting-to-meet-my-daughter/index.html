@@ -14,7 +14,6 @@
       Waiting to meet my daughter
       
     </title>
-
     <!-- synchronous js / schema  -->
     <script type="application/ld+json">
   {
@@ -62,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?b073-bed3-f27d" />
+    <link rel="stylesheet" href="/assets/css/global.css?0182-4155-152d" />
 
     <!-- preloads -->
     <link
@@ -97,7 +96,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?b073-bed3-f27d" defer></script>
+    <script type="module" src="/assets/scripts/app.js?0182-4155-152d" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/life/waiting-to-meet-my-daughter/" />
@@ -159,14 +158,14 @@
 
 <header class="relative" role="banner">
   <div class="site-head | ontop spot-color-primary">
-    
-   <a href="/" class="logo site-head__brand | no-underline" >
+    <div class="site-head-left">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden="true"
         focusable="false"
+        id="theme-toggle"
       >
         <path
           fill-rule="evenodd"
@@ -175,8 +174,11 @@
         />
       </svg>
 
-      Problem First
-    </a>
+      
+      <a href="/" class="logo site-head__brand | no-underline" >
+        Problem First
+      </a>
+    </div>
 
     <nav id="mainnav" class="navbar" aria-label="Main">
   <ul>
@@ -332,5 +334,14 @@
 
 
 
+    <script lang="javascript">
+      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        console.log("dark")
+        document.body.classList.add('dark-mode')
+      } else {
+        console.log("light")
+        document.body.classList.remove('dark-mode')
+      }
+    </script>
   </body>
 </html>

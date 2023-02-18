@@ -120,3 +120,13 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 .preload-transitions * {
   transition: none !important;
 }
+
+.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* Use the `dark:` variant to apply specific styles in dark mode */
+.dark-mode h1 {
+  color: #fff;
+}

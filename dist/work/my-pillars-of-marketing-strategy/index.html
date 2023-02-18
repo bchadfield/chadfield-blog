@@ -14,7 +14,6 @@
       My pillars of marketing strategy
       
     </title>
-
     <!-- synchronous js / schema  -->
     <script type="application/ld+json">
   {
@@ -62,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?6f31-5ad0-4950" />
+    <link rel="stylesheet" href="/assets/css/global.css?a631-ed45-0b0a" />
 
     <!-- preloads -->
     <link
@@ -97,7 +96,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?6f31-5ad0-4950" defer></script>
+    <script type="module" src="/assets/scripts/app.js?a631-ed45-0b0a" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/my-pillars-of-marketing-strategy/" />
@@ -159,14 +158,14 @@
 
 <header class="relative" role="banner">
   <div class="site-head | ontop spot-color-primary">
-    
-   <a href="/" class="logo site-head__brand | no-underline" >
+    <div class="site-head-left">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden="true"
         focusable="false"
+        id="theme-toggle"
       >
         <path
           fill-rule="evenodd"
@@ -175,8 +174,11 @@
         />
       </svg>
 
-      Problem First
-    </a>
+      
+      <a href="/" class="logo site-head__brand | no-underline" >
+        Problem First
+      </a>
+    </div>
 
     <nav id="mainnav" class="navbar" aria-label="Main">
   <ul>
@@ -342,5 +344,14 @@
 
 
 
+    <script lang="javascript">
+      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        console.log("dark")
+        document.body.classList.add('dark-mode')
+      } else {
+        console.log("light")
+        document.body.classList.remove('dark-mode')
+      }
+    </script>
   </body>
 </html>

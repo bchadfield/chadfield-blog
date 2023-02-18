@@ -1,10 +1,6 @@
 .card {
-  background: var(--color-light);
   border-top: 3px solid var(--color-dark);
   border-bottom: 3px solid var(--color-dark);
-  color: var(--color-dark);
-  /* padding: var(--space-m-l); */
-  /* border-radius: var(--border-radius); */
   max-width: unset;
 }
 
