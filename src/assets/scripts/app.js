@@ -1,5 +1,4 @@
 // ------------------- responsive accessible nav by Manuel Matuzović: https://web.dev/website-navigation/
-
 const nav = document.querySelector('nav');
 const list = nav.querySelector('ul');
 const burgerClone = document.querySelector('#burger-template').content.cloneNode(true);
@@ -49,4 +48,11 @@ cards.forEach(card => {
       link.click();
     }
   };
+});
+
+const darkModeToggle = document.querySelector('#theme-toggle');
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  localStorage.setItem('theme', isDarkMode);
 });

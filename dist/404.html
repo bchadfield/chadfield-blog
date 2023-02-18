@@ -14,7 +14,6 @@
       404 Not Found
       
     </title>
-
     <!-- synchronous js / schema  -->
     <script type="application/ld+json">
   {
@@ -34,7 +33,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?b8f9-a2c9-0b0a" />
+    <link rel="stylesheet" href="/assets/css/global.css?ed60-4140-b906" />
 
     <!-- preloads -->
     <link
@@ -63,7 +62,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?b8f9-a2c9-0b0a" defer></script>
+    <script type="module" src="/assets/scripts/app.js?ed60-4140-b906" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/404.html" />
@@ -125,14 +124,14 @@
 
 <header class="relative" role="banner">
   <div class="site-head | ontop spot-color-primary">
-    
-   <a href="/" class="logo site-head__brand | no-underline" >
+    <div class="site-head-left">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
         aria-hidden="true"
         focusable="false"
+        id="theme-toggle"
       >
         <path
           fill-rule="evenodd"
@@ -141,8 +140,11 @@
         />
       </svg>
 
-      Problem First
-    </a>
+      
+      <a href="/" class="logo site-head__brand | no-underline" >
+        Problem First
+      </a>
+    </div>
 
     <nav id="mainnav" class="navbar" aria-label="Main">
   <ul>
@@ -288,5 +290,14 @@
 
 
 
+    <script lang="javascript">
+      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        console.log("dark")
+        document.body.classList.add('dark-mode')
+      } else {
+        console.log("light")
+        document.body.classList.remove('dark-mode')
+      }
+    </script>
   </body>
 </html>

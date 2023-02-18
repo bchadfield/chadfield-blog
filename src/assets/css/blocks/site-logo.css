@@ -6,4 +6,5 @@
   gap: var(--space-xs);
   letter-spacing: -0.08rem;
   padding: var(--space-xs) 0;
+  outline: none;
 }
