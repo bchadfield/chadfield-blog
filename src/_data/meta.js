@@ -1,5 +1,5 @@
 module.exports = {
-  url: process.env.URL || 'http://localhost:8080',
+  url: 'https://chadfield.org', //process.env.URL || 'http://localhost:8080',
   siteName: 'Problem First',
   siteDescription:
     'Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.',
