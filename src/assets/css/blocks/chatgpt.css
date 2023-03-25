@@ -1,0 +1,14 @@
+.chatgpt {
+    background-image: "/assets/images/chatgpt.svg";
+    margin: 0 -2rem 0 -2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    background-color: #d9d9e3;
+}
+
+.dark-mode .chatgpt {
+    background-color: #444654;
+}
+
+.chatgpt img.chatgpt-logo {
+    padding-bottom: 1rem;
+}
