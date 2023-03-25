@@ -11,6 +11,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--color-light)
 }
+.blog .post-header img {
+  width: 100%;
+  height: auto;
+}
 .blog h1 {
   font-size: var(--size-step-4);
 }
@@ -22,10 +26,7 @@
 .blog h3 {
   font-size: var(--size-step-2);
 }
-.blog img {
-  width: 100%;
-  height: auto;
-}
+
 .blog time {
   opacity: 0.8;
 }
