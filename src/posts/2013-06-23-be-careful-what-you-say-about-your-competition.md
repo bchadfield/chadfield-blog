@@ -1,7 +1,5 @@
 ---
 title: Be careful what you say about your competition
-author: bcadmin
-layout: post
 permalink: /work/be-careful-what-you-say-about-your-competition/
 date: 2013-06-23
 image: talking-about-competition.png

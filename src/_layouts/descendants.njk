@@ -1,0 +1,26 @@
+---
+layout: base
+---
+
+<header class="section spot-color-primary">
+  <div class="section__inner">
+    <div class="wrapper flow region">
+      {# <h1 class="text-center">Blog</h1> #}
+    </div>
+  </div>
+  {% include 'svg/divider-pixels.svg' %}
+</header>
+
+<article class="wrapper region">
+  <div class="prose">
+    Exploring the similarities and differences of humankind over 4000 years, from 2000 years in the past to 2000 years into the future. 
+    How does family life, birth, death, and daily life compare in Iron Age Britain compare to modern day life? What will life be like 2000 years into the future?
+  </div>
+  <ul class="grid mt-l-xl" role="list" data-layout="50-50">
+    {% for story in collections.descendants %}
+
+      {% include "partials/story-card.njk" %}
+
+    {% endfor %}
+  </ul>
+</article>

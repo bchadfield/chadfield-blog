@@ -11,9 +11,9 @@ I used the example of selling water. We all know what water is and why we use it
 *   A clear fluid
 *   2 parts hydrogen
 *   1 part oxygen
-*   Becomes a solid at 0°C
-*   Becomes a gas at 100°C
+*   Becomes a solid at 0 degrees C
+*   Becomes a gas at 100 degrees C
 
-This isn’t useful.  People are looking for solutions to their problems. One of the key things water solves is thirst. There are other things that quench thirst, but nothing as natural as good old fresh water. Instead of a features list a better copy could be, “The healthiest way to quench your thirst.”
+This isn't useful. People are looking for solutions to their problems. One of the key things water solves is thirst. There are other things that quench thirst, but nothing as natural as good old fresh water. Instead of a features list a better copy could be, "The healthiest way to quench your thirst."
 
-That makes the principle easy to understand. The key is understanding the problem, which can be a lot of hard work. Never assume you know the problem. Confirming the problem is a big part of the initial customer development and that’s the lesson I want to cement for myself.
+That makes the principle easy to understand. The key is understanding the problem, which can be a lot of hard work. Never assume you know the problem. Confirming the problem is a big part of the initial customer development and that's the lesson I want to cement for myself.

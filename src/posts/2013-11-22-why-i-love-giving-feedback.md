@@ -1,7 +1,5 @@
 ---
 title: Why I love giving feedback
-author: bcadmin
-layout: post
 permalink: /work/why-i-love-giving-feedback/
 date: 2013-11-22
 image: love-feedback.png

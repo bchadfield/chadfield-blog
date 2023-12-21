@@ -1,7 +1,5 @@
 ---
 title: CS Workflow is now taking registrations of interest
-author: bcadmin
-layout: post
 permalink: /work/cs-workflow-is-now-taking-registrations-of-interest/
 date: 2013-03-14
 image: csworkflow-registration-open.png

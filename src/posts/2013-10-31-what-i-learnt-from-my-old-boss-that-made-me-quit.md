@@ -1,7 +1,5 @@
 ---
 title: What I learnt from my old boss that made me quit
-author: bcadmin
-layout: post
 permalink: /work/what-i-learnt-from-my-old-boss-that-made-me-quit/
 date: 2013-10-31
 image: lessons-from-old-boss.png

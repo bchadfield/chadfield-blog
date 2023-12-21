@@ -32,7 +32,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {getAllPosts} = require('./config/collections/index.js');
+// const {getAllPosts} = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -89,7 +89,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
   // 	--------------------- Custom collections -----------------------
-  eleventyConfig.addCollection('posts', getAllPosts);
+  // eleventyConfig.addCollection('posts', getAllPosts);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);

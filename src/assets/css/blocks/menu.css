@@ -71,6 +71,10 @@ nav.navbar a {
   text-decoration: none;
 }
 
+.dark-mode nav.navbar a {
+  --text-color: var(--color-light);
+}
+
 /* Change the border-color on :hover and :focus */
 nav.navbar a:where(:hover, :focus) {
   --border-color: var(--text-color);
@@ -78,8 +82,9 @@ nav.navbar a:where(:hover, :focus) {
 
 /* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--color-primary);
-  --text-color: var(--color-primary);
+  --border-color: var(--text-color);
+  /* --border-color: var(--color-primary);
+  --text-color: var(--color-primary); */
 }
 
 /* Reset button styling */
@@ -117,4 +122,5 @@ nav.navbar img.avatar {
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
+  margin-top: -0.25rem;
 }

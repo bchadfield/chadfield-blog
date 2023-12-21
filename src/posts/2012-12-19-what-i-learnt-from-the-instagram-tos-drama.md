@@ -1,7 +1,5 @@
 ---
 title: What I learnt from the Instagram TOS drama
-author: bcadmin
-layout: post
 permalink: /work/what-i-learnt-from-the-instagram-tos-drama/
 date: 2012-12-19
 image: instagram-tos-drama.png

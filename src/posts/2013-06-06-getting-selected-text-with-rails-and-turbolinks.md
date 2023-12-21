@@ -1,7 +1,5 @@
 ---
 title: Getting selected text with Rails and Turbolinks
-author: bcadmin
-layout: post
 permalink: /work/getting-selected-text-with-rails-and-turbolinks/
 date: 2013-06-06
 image: selected-text-rails.png

@@ -1,7 +1,5 @@
 ---
 title: My pillars of marketing strategy
-author: bcadmin
-layout: post
 permalink: /work/my-pillars-of-marketing-strategy/
 date: 2013-04-27
 image: marketing-strategy-pillars.png

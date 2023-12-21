@@ -25,11 +25,15 @@
 
 .card .card-content {
   margin: 0;
-  padding: var(--space-l);
+  padding-top: var(--space-m);
+  padding-bottom: var(--space-l);
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
 }
 
 .card h2 {
   font-size: var(--size-step-2);
+  margin-bottom: var(--space-s)
 }
 
 .card h2 a,

@@ -1,7 +1,5 @@
 ---
 title: 'Shutting down Dibbist: mistakes and lessons'
-author: bcadmin
-layout: post
 permalink: /work/shutting-down-dibbist-mistakes-and-lessons/
 date: 2013-03-18
 image: dibbist-lessons.png

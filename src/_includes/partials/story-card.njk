@@ -1,0 +1,14 @@
+    <li class="card clickable-card overflow-hidden">
+      <div class="card-content story">
+        <h2>
+          <a href="{{ story.url | url }}">{{ story.data.title }}</a>
+        </h2>
+        <p>{{ story.data.timeline }}</p>
+        {# <p>{{ story.data.characters }}</p> #}
+        <ul>
+          {% for character in story.data.characters %}
+            <li>{{ character }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>

@@ -1,7 +1,5 @@
 ---
 title: Attaching PDFs to emails with Prawn and Rails
-author: bcadmin
-layout: post
 permalink: /work/attaching-pdfs-to-emails-with-prawn-and-rails/
 date: 2013-03-31
 image: attaching-pdfs-rails-prawn.png
@@ -20,7 +18,7 @@ gem 'prawn', '~> 0.12.0'
 
 I found out that through an error message that Rails 4 already has the PDF mimetype registered, so that part of the railscast can be skipped.
 
-I rendered a test PDF in the browser so I could make sure it looked how I wanted before attaching it to an email. Refreshing the browser displayed the changes. To get this working I created a ‘test’ action in my briefs controller and added that as a route.
+I rendered a test PDF in the browser so I could make sure it looked how I wanted before attaching it to an email. Refreshing the browser displayed the changes. To get this working I created a 'test' action in my briefs controller and added that as a route.
 
 ```elixir
 def test
@@ -37,9 +35,9 @@ def test
 end
 ```
 
-Following the same pattern as the railscast, I created a <a href="https://gist.github.com/bchadfield/5274166" target="_blank">BriefsPdf class</a> that inherited from Prawn::Document. This initializes, taking the arguments, which are my objects, then calls methods that render boxes and text. It’s a bit hacked together, but you get the picture. I kept the <a href="http://chadfield.org/assets/brief.pdf" target="_blank">testing output</a>, so that’s what the class renders.
+Following the same pattern as the railscast, I created a <a href="https://gist.github.com/bchadfield/5274166" target="_blank">BriefsPdf class</a> that inherited from Prawn::Document. This initializes, taking the arguments, which are my objects, then calls methods that render boxes and text. It's a bit hacked together, but you get the picture. I kept the <a href="http://chadfield.org/assets/brief.pdf" target="_blank">testing output</a>, so that's what the class renders.
 
-The biggest “gotcha” I came across was with using bounding boxes and text boxes. The cursor, which moves down the page as it renders, behaves differently with those boxes. I ran into trouble with my two bounding boxes, because if the cursor is moved to the bottom of the right box. If the left box is higher I got overlap. With text boxes the cursor doesn’t move down at all. You have to move it manually with move_down. This is fine if you know the height of the box. With user input you don’t have control. That’s why I’m not using text boxes.
+The biggest "gotcha" I came across was with using bounding boxes and text boxes. The cursor, which moves down the page as it renders, behaves differently with those boxes. I ran into trouble with my two bounding boxes, because if the cursor is moved to the bottom of the right box. If the left box is higher I got overlap. With text boxes the cursor doesn't move down at all. You have to move it manually with move_down. This is fine if you know the height of the box. With user input you don't have control. That's why I'm not using text boxes.
 
 The mailer is the simplest part of the whole process.
 
@@ -55,11 +53,11 @@ def send_brief(brief, user)
 end
 ```
 
-I’m using a dynamic file name for the PDF, so the client and copywriter have a reference. The actual attachment is a single line.
+I'm using a dynamic file name for the PDF, so the client and copywriter have a reference. The actual attachment is a single line.
 
-There you have it. I&#8217;ll be using this same technique for creating invoices and subscription agreements.
+There you have it. I'll be using this same technique for creating invoices and subscription agreements.
 
-Here’s the list of resources that guided me:
+Here's the list of resources that guided me:
 
 *   <a href="http://railscasts.com/episodes/153-pdfs-with-prawn-revised" target="_blank">Railscast</a>
 *   <a href="http://prawn.majesticseacreature.com/manual.pdf" target="_blank">Prawn documentation</a>

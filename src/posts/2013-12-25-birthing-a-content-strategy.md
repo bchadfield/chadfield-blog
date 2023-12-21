@@ -1,7 +1,5 @@
 ---
 title: Birthing a Content Strategy
-author: bcadmin
-layout: post
 permalink: /work/birthing-a-content-strategy/
 date: 2013-12-25
 image: birthing-content-strategy.png
