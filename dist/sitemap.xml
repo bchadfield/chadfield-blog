@@ -227,325 +227,6 @@
   
 
     <url>
-        <loc>https://chadfield.org/assets/css/blocks/blog.css</loc>
-        <lastmod>2023-01-15T21:50:13.209Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/button.css</loc>
-        <lastmod>2023-01-15T21:50:13.211Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/card.css</loc>
-        <lastmod>2023-01-15T21:50:13.212Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/code.css</loc>
-        <lastmod>2023-01-15T21:50:13.213Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/menu.css</loc>
-        <lastmod>2023-01-15T21:50:13.214Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/prose.css</loc>
-        <lastmod>2023-01-15T21:50:13.216Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/section.css</loc>
-        <lastmod>2023-01-15T21:50:13.217Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/seperator.css</loc>
-        <lastmod>2023-01-15T21:50:13.218Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/site-foot.css</loc>
-        <lastmod>2023-01-15T21:50:13.220Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/site-head.css</loc>
-        <lastmod>2023-01-15T21:50:13.220Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/site-logo.css</loc>
-        <lastmod>2023-01-15T21:50:13.222Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/skip-link.css</loc>
-        <lastmod>2023-01-15T21:50:13.223Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/textgradient.css</loc>
-        <lastmod>2023-01-15T21:50:13.225Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/blocks/youtube.css</loc>
-        <lastmod>2023-01-15T21:50:13.226Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/compositions/cluster.css</loc>
-        <lastmod>2023-01-15T21:50:13.228Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/compositions/grid.css</loc>
-        <lastmod>2023-01-15T21:50:13.228Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/global/fonts.css</loc>
-        <lastmod>2023-01-15T21:50:13.230Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/global/global-styles.css</loc>
-        <lastmod>2023-01-15T21:50:13.233Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/global/reset.css</loc>
-        <lastmod>2023-01-15T21:50:13.234Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/global/variables.css</loc>
-        <lastmod>2023-01-15T21:50:13.235Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/global.css</loc>
-        <lastmod>2023-01-15T21:50:13.237Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/utilities/content.css</loc>
-        <lastmod>2023-01-15T21:50:13.239Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/utilities/flow.css</loc>
-        <lastmod>2023-01-15T21:50:13.240Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/utilities/region.css</loc>
-        <lastmod>2023-01-15T21:50:13.241Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css/utilities/wrapper.css</loc>
-        <lastmod>2023-01-15T21:50:13.242Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css-utils/clamp-generator.js</loc>
-        <lastmod>2023-01-15T21:50:13.244Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/css-utils/tokens-to-tailwind.js</loc>
-        <lastmod>2023-01-15T21:50:13.245Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/assets/scripts/app.js</loc>
-        <lastmod>2023-01-15T21:50:13.300Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/</loc>
-        <lastmod>2023-01-15T21:50:13.307Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
         <loc>https://chadfield.org/work/migrating-this-blog-to-eleventy/</loc>
         <lastmod>2023-03-25T00:00:00.000Z</lastmod>
     </url>
@@ -557,8 +238,63 @@
   
 
     <url>
+        <loc>https://chadfield.org/assets/css-utils/clamp-generator.js</loc>
+        <lastmod>2024-04-29T22:15:02.996Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css-utils/tokens-to-tailwind.js</loc>
+        <lastmod>2024-04-29T22:15:02.996Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/blog.css</loc>
+        <lastmod>2024-04-29T22:15:02.996Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/button.css</loc>
+        <lastmod>2024-04-29T22:15:02.996Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/card.css</loc>
+        <lastmod>2024-04-29T22:15:02.996Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
         <loc>https://chadfield.org/assets/css/blocks/chatgpt.css</loc>
-        <lastmod>2023-03-25T17:48:40.273Z</lastmod>
+        <lastmod>2024-04-29T22:15:03.000Z</lastmod>
     </url>
     
   
@@ -568,8 +304,8 @@
   
 
     <url>
-        <loc>https://chadfield.org/descendants/</loc>
-        <lastmod>2023-12-21T20:24:50.784Z</lastmod>
+        <loc>https://chadfield.org/assets/css/blocks/code.css</loc>
+        <lastmod>2024-04-29T22:15:03.000Z</lastmod>
     </url>
     
   
@@ -579,8 +315,8 @@
   
 
     <url>
-        <loc>https://chadfield.org/about/</loc>
-        <lastmod>2023-12-21T20:26:54.272Z</lastmod>
+        <loc>https://chadfield.org/assets/css/blocks/menu.css</loc>
+        <lastmod>2024-04-29T22:15:03.001Z</lastmod>
     </url>
     
   
@@ -590,8 +326,8 @@
   
 
     <url>
-        <loc>https://chadfield.org/stories/beatrice-suffers-alone/</loc>
-        <lastmod>2023-12-21T21:54:19.975Z</lastmod>
+        <loc>https://chadfield.org/assets/css/blocks/prose.css</loc>
+        <lastmod>2024-04-29T22:15:03.002Z</lastmod>
     </url>
     
   
@@ -601,8 +337,63 @@
   
 
     <url>
-        <loc>https://chadfield.org/stories/julia-tells-dan-shes-pregnant/</loc>
-        <lastmod>2023-12-21T22:16:33.621Z</lastmod>
+        <loc>https://chadfield.org/assets/css/blocks/section.css</loc>
+        <lastmod>2024-04-29T22:15:03.002Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/seperator.css</loc>
+        <lastmod>2024-04-29T22:15:03.002Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/site-foot.css</loc>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/site-head.css</loc>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/site-logo.css</loc>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/skip-link.css</loc>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
     </url>
     
   
@@ -613,7 +404,227 @@
 
     <url>
         <loc>https://chadfield.org/assets/css/blocks/story.css</loc>
-        <lastmod>2023-12-21T22:51:46.550Z</lastmod>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/textgradient.css</loc>
+        <lastmod>2024-04-29T22:15:03.004Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/blocks/youtube.css</loc>
+        <lastmod>2024-04-29T22:15:03.008Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/compositions/cluster.css</loc>
+        <lastmod>2024-04-29T22:15:03.008Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/compositions/grid.css</loc>
+        <lastmod>2024-04-29T22:15:03.008Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/global.css</loc>
+        <lastmod>2024-04-29T22:15:03.008Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/global/fonts.css</loc>
+        <lastmod>2024-04-29T22:15:03.011Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/global/global-styles.css</loc>
+        <lastmod>2024-04-29T22:15:03.012Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/global/reset.css</loc>
+        <lastmod>2024-04-29T22:15:03.012Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/global/variables.css</loc>
+        <lastmod>2024-04-29T22:15:03.013Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/utilities/content.css</loc>
+        <lastmod>2024-04-29T22:15:03.013Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/utilities/flow.css</loc>
+        <lastmod>2024-04-29T22:15:03.013Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/utilities/region.css</loc>
+        <lastmod>2024-04-29T22:15:03.013Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/css/utilities/wrapper.css</loc>
+        <lastmod>2024-04-29T22:15:03.013Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/assets/scripts/app.js</loc>
+        <lastmod>2024-04-29T22:15:03.236Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/about/</loc>
+        <lastmod>2024-04-29T22:15:03.241Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/descendants/</loc>
+        <lastmod>2024-04-29T22:15:03.241Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/</loc>
+        <lastmod>2024-04-29T22:15:03.242Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/stories/beatrice-suffers-alone/</loc>
+        <lastmod>2024-04-29T22:15:03.263Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/stories/julia-tells-dan-shes-pregnant/</loc>
+        <lastmod>2024-04-29T22:15:03.263Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>https://chadfield.org/stories/dan-and-julias-first-date/</loc>
+        <lastmod>2024-04-29T23:23:20.341Z</lastmod>
     </url>
     
   
