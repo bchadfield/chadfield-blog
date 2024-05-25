@@ -69,6 +69,7 @@ nav.navbar a {
   color: var(--text-color);
   padding: 0.1rem;
   text-decoration: none;
+  font-family: var(--font-display);
 }
 
 .dark-mode nav.navbar a {
@@ -116,11 +117,4 @@ header svg {
 
 nav.navbar [aria-expanded='true'] svg {
   transform: var(--nav-list-rotate, rotate(45deg));
-}
-
-nav.navbar img.avatar {
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-top: -0.25rem;
 }

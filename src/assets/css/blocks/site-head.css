@@ -1,11 +1,12 @@
 .site-head {
-  position: absolute;
+  position: relative;
   width: 100%;
   padding: 0 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  font-size: var(--font-display) !important;
 }
 
 .site-head-left {

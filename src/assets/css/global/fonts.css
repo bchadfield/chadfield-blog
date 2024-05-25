@@ -1,29 +1,21 @@
 @font-face {
-  font-family: Inter;
+  font-family: 'Noto Serif';
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-  font-weight: 400;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-500.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-500.woff) format('woff');
-}
-
-@font-face {
-  font-family: Inter;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-700.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-700.woff) format('woff');
-}
-
-@font-face {
-  font-family: Redhat;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
   src: local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2'),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff) format('woff');
+    url(/assets/fonts/notoserif/noto-serif-normal-400.woff2)
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'Overpass Mono';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local(''),
+    url(/assets/fonts/overpassmono/overpass-mono-normal-400.woff2)
+      format('woff2');
 }
 
 @font-face {

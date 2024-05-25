@@ -33,26 +33,19 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?5653-51c7-141d" />
+    <link rel="stylesheet" href="/assets/css/global.css?ec45-5f0e-9ec3" />
 
     <!-- preloads -->
     <link
       rel="preload"
-      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
+      href="/assets/fonts/notoserif/noto-serif-normal-400.woff2"
       as="font"
       type="font/woff2"
       crossorigin
     />
     <link
       rel="preload"
-      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      href="/assets/fonts/overpassmono/overpass-mono-normal-400.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -62,7 +55,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?5653-51c7-141d" defer></script>
+    <script type="module" src="/assets/scripts/app.js?ec45-5f0e-9ec3" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/descendants/" />
@@ -135,31 +128,30 @@
     <!-- header -->
     <a href="#main" class="skip-link">Skip to content</a>
 
-<header class="relative" role="banner">
-  <div class="site-head | ontop spot-color-primary">
-    <div class="site-head-left">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-        focusable="false"
-        id="theme-toggle"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-          clip-rule="evenodd"
-        />
-      </svg>
+<header class="site-head" role="banner">
+  <div class="site-head-left">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+      id="theme-toggle"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+        clip-rule="evenodd"
+      />
+    </svg>
 
-      
-      <a href="/" class="logo site-head__brand | no-underline" >
-        Problem First
-      </a>
-    </div>
+    
+    <a href="/" class="logo site-head__brand | no-underline" >
+      Problem First
+    </a>
+  </div>
 
-    <nav id="mainnav" class="navbar" aria-label="Main">
+  <nav id="mainnav" class="navbar" aria-label="Main">
   <ul>
     
     <li>
@@ -189,7 +181,6 @@
       >
     </li>
     
-    <li><img class="avatar" src="/assets/images/bc-face.jpg" /></li>
   </ul>
 </nav>
 
@@ -208,32 +199,11 @@
   </button>
 </template>
 
-  </div>
 </header>
 
 
     <!-- content slot -->
     <main id="main" class="relative">
-<header class="section spot-color-primary">
-  <div class="section__inner">
-    <div class="wrapper flow region">
-      
-    </div>
-  </div>
-  <svg
-  class="seperator"
-  preserveAspectRatio="none"
-  viewBox="0 0 1440 320"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M0,0L0,32L36.9,32L36.9,128L73.8,128L73.8,224L110.8,224L110.8,160L147.7,160L147.7,64L184.6,64L184.6,224L221.5,224L221.5,288L258.5,288L258.5,256L295.4,256L295.4,256L332.3,256L332.3,160L369.2,160L369.2,288L406.2,288L406.2,256L443.1,256L443.1,64L480,64L480,160L516.9,160L516.9,256L553.8,256L553.8,32L590.8,32L590.8,288L627.7,288L627.7,96L664.6,96L664.6,224L701.5,224L701.5,288L738.5,288L738.5,32L775.4,32L775.4,128L812.3,128L812.3,288L849.2,288L849.2,0L886.2,0L886.2,64L923.1,64L923.1,128L960,128L960,224L996.9,224L996.9,192L1033.8,192L1033.8,96L1070.8,96L1070.8,128L1107.7,128L1107.7,0L1144.6,0L1144.6,192L1181.5,192L1181.5,320L1218.5,320L1218.5,96L1255.4,96L1255.4,192L1292.3,192L1292.3,224L1329.2,224L1329.2,192L1366.2,192L1366.2,288L1403.1,288L1403.1,128L1440,128L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"
-  ></path>
-</svg>
-
-</header>
-
 <article class="wrapper region">
   <div class="prose">
     Exploring the similarities and differences of humankind over 4000 years, from 2000 years in the past to 2000 years into the future. 

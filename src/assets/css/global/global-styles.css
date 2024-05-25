@@ -122,11 +122,11 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 }
 
 .dark-mode {
-  background-color: #1a202c;
-  color: #f7fafc;
+  background: var(--color-dark);
+  color: var(--color-light);
 }
 
 /* Use the `dark:` variant to apply specific styles in dark mode */
 .dark-mode h1 {
-  color: #fff;
+  color: var(--color-light-glare);
 }
