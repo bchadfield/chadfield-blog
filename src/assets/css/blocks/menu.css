@@ -64,17 +64,15 @@ nav.navbar [aria-expanded='false'] + ul {
 
 /* Basic link styling */
 nav.navbar a {
-  --text-color: var(--color-dark);
   border-block-end: 3px solid var(--border-color, transparent);
-  color: var(--text-color);
-  padding: 0.1rem;
+  padding: 0.1rem 3rem 0.1rem 0.1rem;
   text-decoration: none;
   font-family: var(--font-display);
 }
 
-.dark-mode nav.navbar a {
+/* .dark-mode nav.navbar a {
   --text-color: var(--color-light);
-}
+} */
 
 /* Change the border-color on :hover and :focus */
 nav.navbar a:where(:hover, :focus) {

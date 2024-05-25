@@ -5,8 +5,8 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  background: var(--color-light);
+  color: var(--color-text);
+  background: var(--color-background);
   font-size: var(--size-step-1);
   font-family: var(--font-base);
   line-height: 1.4;
@@ -76,7 +76,7 @@ svg {
 /* Base interactive elements */
 
 a {
-  color: currentcolor;
+  color: var(--color-link);
 }
 
 a:hover {
@@ -112,21 +112,11 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 }
 
 /* Base selection styles that invert whatever colours are rendered */
-::selection {
+/* ::selection {
   background: var(--color-dark);
   color: var(--color-light);
-}
+} */
 
 .preload-transitions * {
   transition: none !important;
-}
-
-.dark-mode {
-  background: var(--color-dark);
-  color: var(--color-light);
-}
-
-/* Use the `dark:` variant to apply specific styles in dark mode */
-.dark-mode h1 {
-  color: var(--color-light-glare);
 }

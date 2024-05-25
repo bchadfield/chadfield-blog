@@ -50,9 +50,40 @@ cards.forEach(card => {
   };
 });
 
-const darkModeToggle = document.querySelector('#theme-toggle');
-darkModeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-  const isDarkMode = document.body.classList.contains('dark-mode');
-  localStorage.setItem('theme', isDarkMode);
+// const darkModeToggle = document.querySelector('#theme-toggle');
+// darkModeToggle.addEventListener('click', () => {
+//   document.body.classList.toggle('dark-mode');
+//   const isDarkMode = document.body.classList.contains('dark-mode');
+//   localStorage.setItem('theme', isDarkMode);
+// });
+
+/* Test early for local storage color scheme value to avoid FOIT */
+const currentColorscheme = localStorage.getItem("theme");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+let isDark;
+
+/* 1. is color preference already saved in local storage? */
+if (currentColorscheme == "dark" || !currentColorscheme && prefersDarkScheme.matches) {
+  document.documentElement.setAttribute("dark", true);
+  isDark = true;
+}
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  // Header color scheme toggle (light/dark modes)
+  const csToggle = document.querySelector(".dark-toggle");
+
+  if (isDark) {
+    csToggle.checked = true;
+  }
+
+  if (csToggle) {
+    csToggle.addEventListener("change", () => {
+      document.documentElement.toggleAttribute("dark");
+      let cs = "light";
+      if (document.documentElement.hasAttribute("dark")) {
+        cs = "dark";
+      }
+      localStorage.setItem("theme", cs);
+    });
+  }
 });

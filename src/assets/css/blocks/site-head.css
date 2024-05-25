@@ -1,7 +1,7 @@
 .site-head {
   position: relative;
   width: 100%;
-  padding: 0 1rem;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -9,12 +9,26 @@
   font-size: var(--font-display) !important;
 }
 
-.site-head-left {
+.site-head-right {
   display: flex;
   align-items: center;
 }
 
-.site-head-left svg {
+.site-head-right svg {
   padding-right: 0.5rem;
 }
 
+.dark-toggle .toggle__label {
+  width: 1rem;
+  height: 1rem;
+  padding-left: .5rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dark-toggle .toggle__text, .dark-toggle .toggle__checkbox {
+  display: none;
+}
