@@ -61,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?8e4e-a638-a0f6" />
+    <link rel="stylesheet" href="/assets/css/global.css?72f3-b331-4d49" />
 
     <!-- preloads -->
     <link
@@ -89,7 +89,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?8e4e-a638-a0f6" defer></script>
+    <script type="module" src="/assets/scripts/app.js?72f3-b331-4d49" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/migrating-this-blog-to-eleventy/" />
@@ -234,18 +234,17 @@
     <!-- content slot -->
     <main id="main" class="relative">
 <article class="region blog">
-  <div class="wrapper flow prose">
-    <div class="post-header">
-      <img src="/assets/images/posts/migrating-to-11ty.png" />
+  <div class="wrapper flow">
+    <img class="header" src="/assets/images/posts/migrating-to-11ty.png" />
+    <div class="wrapper flow prose">
       <h1>Migrating this Blog to Eleventy</h1>
-    </div>
 
-     <time datetime="2023-03-25T00:00:00.000Z">
+       <time datetime="2023-03-25T00:00:00.000Z">
   @March 25, 2023
 </time>
 
 
-    <p>I recently decided to update my website after neglecting it for over 8 years. I wanted to give it a refresh and make it more modern and appealing. After a quick search, I chose <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a> as my SSG. I like new SSGs that give me something interesting to learn. I’ve been sticking with Javascript for a while, only using Python for machine learning projects. Eleventy fits that description perfectly.</p>
+      <p>I recently decided to update my website after neglecting it for over 8 years. I wanted to give it a refresh and make it more modern and appealing. After a quick search, I chose <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a> as my SSG. I like new SSGs that give me something interesting to learn. I’ve been sticking with Javascript for a while, only using Python for machine learning projects. Eleventy fits that description perfectly.</p>
 <h2 id="selecting-a-starter-project"><a class="heading-anchor" href="#selecting-a-starter-project">Selecting a starter project</a></h2>
 <p>Once I chose Eleventy, the next step was to find a starter project to work with. Thankfully, Eleventy has a lot of starter projects available on their website. I selected one that gave me new things to learn. I hadn’t built anything with Tailwind CSS, so I went with one that used that framework. The starter project I chose was called “Eleventy Excellent” and can be found on GitHub at <a href="https://github.com/madrilene/eleventy-excellent" target="_blank" rel="noopener">https://github.com/madrilene/eleventy-excellent</a>.</p>
 <h2 id="migrating-old-content"><a class="heading-anchor" href="#migrating-old-content">Migrating old content</a></h2>
@@ -298,6 +297,7 @@
 <p>Finally, it was time to set up my publishing pipeline. I chose GitHub as my platform, and the good news was that it automatically publishes Jekyll. I set up a GitHub action to publish my site, which is triggered by a push to the master branch. The only thing I had to update was the source folder.</p>
 <p>Eleventy was a great choice for me, and I had a lot of fun learning new things while working on my blog. With a little bit of setup, I was able to get my blog up and running with the features I wanted. I’m excited to continue learning and improving my blog in the future.</p>
 
+    </div>
   </div>
 </article>
 </main>

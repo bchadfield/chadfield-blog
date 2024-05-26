@@ -1,6 +1,4 @@
 .card {
-  border-top: 3px solid var(--color-dark);
-  border-bottom: 3px solid var(--color-dark);
   max-width: unset;
 }
 

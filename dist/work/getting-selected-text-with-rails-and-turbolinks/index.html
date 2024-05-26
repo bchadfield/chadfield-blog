@@ -61,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?0dff-fe2b-fba8" />
+    <link rel="stylesheet" href="/assets/css/global.css?9d5f-c24c-e821" />
 
     <!-- preloads -->
     <link
@@ -89,7 +89,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?0dff-fe2b-fba8" defer></script>
+    <script type="module" src="/assets/scripts/app.js?9d5f-c24c-e821" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/getting-selected-text-with-rails-and-turbolinks/" />
@@ -234,18 +234,17 @@
     <!-- content slot -->
     <main id="main" class="relative">
 <article class="region blog">
-  <div class="wrapper flow prose">
-    <div class="post-header">
-      <img src="/assets/images/posts/selected-text-rails.png" />
+  <div class="wrapper flow">
+    <img class="header" src="/assets/images/posts/selected-text-rails.png" />
+    <div class="wrapper flow prose">
       <h1>Getting selected text with Rails and Turbolinks</h1>
-    </div>
 
-     <time datetime="2013-06-06T00:00:00.000Z">
+       <time datetime="2013-06-06T00:00:00.000Z">
   @June 6, 2013
 </time>
 
 
-    <p>I have to start by confessing that I don’t know what it is about Turbolinks that caused the issue I was having. I’m only edu-guessing that Turbolinks is the cause.</p>
+      <p>I have to start by confessing that I don’t know what it is about Turbolinks that caused the issue I was having. I’m only edu-guessing that Turbolinks is the cause.</p>
 <p>So…I needed to know the text that the user had selected with their cursor. This would be used to create context for the comment they wanted to make on the text. I started by using <a href="http://stackoverflow.com/questions/5379120/get-the-highlighted-selected-text" target="_blank">a popular method I found on Stack Overflow</a>.</p>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">getSelectionText</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>getSelection<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> window<span class="token punctuation">.</span><span class="token function">getSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>selection <span class="token operator">&amp;&amp;</span> document<span class="token punctuation">.</span>selection<span class="token punctuation">.</span>type <span class="token operator">!=</span> <span class="token string">"Control"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> document<span class="token punctuation">.</span>selection<span class="token punctuation">.</span><span class="token function">createRange</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text<span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p>This worked fine in a static proof of concept. It also initially worked in my Rails project. By initially I mean after a browser refresh. As soon as I navigated to other pages and retested the function fell through and returned nothing. The rest of my javascript is fine. I am displaying a positioned button after text is selected and once clicked, the button performs an action with the selected text. This all works as expected.</p>
@@ -253,6 +252,7 @@
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">GetSelectedText</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">var</span> selectedText <span class="token operator">=</span> <span class="token punctuation">(</span><br>    window<span class="token punctuation">.</span>getSelection<br>    <span class="token operator">?</span><br>      window<span class="token punctuation">.</span><span class="token function">getSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br>    <span class="token operator">:</span><br>      document<span class="token punctuation">.</span>getSelection<br>      <span class="token operator">?</span><br>        document<span class="token punctuation">.</span><span class="token function">getSelection</span><span class="token punctuation">(</span><span class="token punctuation">)</span><br>      <span class="token operator">:</span><br>        document<span class="token punctuation">.</span>selection<span class="token punctuation">.</span><span class="token function">createRange</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text<br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>selectedText <span class="token operator">||</span> selectedText<span class="token operator">==</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span>activeElement<span class="token punctuation">.</span>selectionStart<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      selectedText <span class="token operator">=</span> document<span class="token punctuation">.</span>activeElement<span class="token punctuation">.</span>value<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><br>        document<span class="token punctuation">.</span>activeElement<span class="token punctuation">.</span>selectionStart<br>        <span class="token punctuation">.</span> document<span class="token punctuation">.</span>activeElement<span class="token punctuation">.</span>selectionEnd<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><br>  <span class="token keyword">return</span> selectedText<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
 <p>That is now working. Or at least it fixes my previous bug. It’s the nested if where selectedText is blank that solves it. I don’t like the if else in the selectedText initiation so I’m using the original function is start with.</p>
 
+    </div>
   </div>
 </article>
 </main>

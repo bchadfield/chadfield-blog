@@ -3,6 +3,10 @@
   --wrapper-max-width: 55rem;
 }
 
+.prose :is(h2, h3, h4) {
+  --flow-space: var(--space-xl-2xl);
+}
+
 .prose :is(h2, h3, h4) + * {
   --flow-space: var(--space-s-m);
 }
@@ -16,4 +20,12 @@
 
 .prose mark {
   background: var(--color-primary-glare);
+}
+
+.prose p, .prose li {
+  max-width: 100%;
+}
+
+.prose li {
+  padding-right: 2rem;
 }

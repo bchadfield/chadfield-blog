@@ -61,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?9340-a9b5-c3c7" />
+    <link rel="stylesheet" href="/assets/css/global.css?7e15-4ce9-bddb" />
 
     <!-- preloads -->
     <link
@@ -89,7 +89,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?9340-a9b5-c3c7" defer></script>
+    <script type="module" src="/assets/scripts/app.js?7e15-4ce9-bddb" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/the-hurdle-to-a-capistrano-deploy-and-setup-on-a-new-micro-ec2-ubuntu-instance/" />
@@ -234,18 +234,17 @@
     <!-- content slot -->
     <main id="main" class="relative">
 <article class="region blog">
-  <div class="wrapper flow prose">
-    <div class="post-header">
-      <img src="/assets/images/posts/capistrano-deploy.png" />
+  <div class="wrapper flow">
+    <img class="header" src="/assets/images/posts/capistrano-deploy.png" />
+    <div class="wrapper flow prose">
       <h1>The hurdle to a Capistrano deploy and setup on a new micro EC2 Ubuntu instance</h1>
-    </div>
 
-     <time datetime="2013-01-26T00:00:00.000Z">
+       <time datetime="2013-01-26T00:00:00.000Z">
   @January 26, 2013
 </time>
 
 
-    <p>At the end of last year I set myself the challenge of getting <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> to deploy updates for <a href="https://www.dibbist.com" target="_blank">Dibbist</a>. Two previous attempts had tripped up on the same Rake issues. It was something to do with my server setup and I didn’t want to start from scratch.</p>
+      <p>At the end of last year I set myself the challenge of getting <a href="https://github.com/capistrano/capistrano" target="_blank">Capistrano</a> to deploy updates for <a href="https://www.dibbist.com" target="_blank">Dibbist</a>. Two previous attempts had tripped up on the same Rake issues. It was something to do with my server setup and I didn’t want to start from scratch.</p>
 <p>You may have seen <a href="https://twitter.com/OnlineBen/status/275134571937398784" target="_blank">my tweet</a> announcing that I’d been successful, so you’ll know I go it working. I did for Dibbist and even more recently repeated the same process for another project I’m helping out with. This post isn’t a tutorial on deploying from scratch with Capistrano. I learnt by watching the excellent Railscasts (referenced in my success tweet) about Capistrano. Episode #375 links to the recipes I used. Why no details? These screencasts are part of the paid section of Railscasts and I’m not going to cut someone’s lunch, especially Ryan Bates.</p>
 <p>This post is about the hurdle I faced twice when following the Railscasts process. Obviously to get a Rails app working you need Ruby installed on the server. The problem I found was that the micro instance took ages to install Ruby. The connection to the server would freeze and Capistrano would just sit there waiting forever for the install to finish. If you looked at the instance activity in the AWS console you’d see that the CPU had finished with compiling and installing.</p>
 <p>The solution is to install Ruby manually at the same time you setup the Deployer user. This will still have the issue with the connection freezing, but once the CPU is finished you’re done. Just remove the Ruby install from the recipes and run.</p>
@@ -257,6 +256,7 @@
 <li>Postgres</li>
 </ul>
 
+    </div>
   </div>
 </article>
 </main>

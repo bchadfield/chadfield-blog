@@ -9,14 +9,14 @@ preloads:
 ---
 
 <article class="region blog">
-  <div class="wrapper flow prose">
-    <div class="post-header">
-      <img src="/assets/images/posts/{{ image }}" />
+  <div class="wrapper flow">
+    <img class="header" src="/assets/images/posts/{{ image }}" />
+    <div class="wrapper flow prose">
       <h1>{{ title }}</h1>
+
+      {% set definedDate = date %} {% include "partials/date.njk" %}
+
+      {{ content | safe }}
     </div>
-
-    {% set definedDate = date %} {% include "partials/date.njk" %}
-
-    {{ content | safe }}
   </div>
 </article>
