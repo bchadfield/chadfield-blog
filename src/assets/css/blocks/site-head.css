@@ -1,7 +1,7 @@
 .site-head {
   position: relative;
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -31,4 +31,8 @@
 
 .dark-toggle .toggle__text, .dark-toggle .toggle__checkbox {
   display: none;
+}
+
+.dark-toggle svg {
+  transition: var(--transition-bounce);
 }

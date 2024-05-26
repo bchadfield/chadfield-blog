@@ -29,7 +29,6 @@ nav.navbar {
   inset-inline-end: 0.1rem;
 }
 
-/* Remove default list styling and create layout for list */
 nav.navbar ul {
   background: var(--nav-list-background, var(--color-light));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
@@ -53,37 +52,26 @@ nav.navbar [aria-expanded='false'] + ul {
   visibility: var(--nav-list-visibility, hidden);
 }
 
-/* animates ul only when opening to avoid flash on page load, svg always */
 @media (prefers-reduced-motion: no-preference) {
   nav.navbar [aria-expanded='true'] + ul,
   nav.navbar svg {
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
-      visibility 0.05s linear;
+    transition: var(--transition-base)
   }
 }
 
-/* Basic link styling */
+nav.navbar li {
+  padding-right: 3rem;
+}
+
 nav.navbar a {
-  border-block-end: 3px solid var(--border-color, transparent);
-  padding: 0.1rem 3rem 0.1rem 0.1rem;
+  border-block-end: 2px solid var(--border-color, transparent);
+  padding: 0.1rem;
   text-decoration: none;
   font-family: var(--font-display);
 }
 
-/* .dark-mode nav.navbar a {
-  --text-color: var(--color-light);
-} */
-
-/* Change the border-color on :hover and :focus */
-nav.navbar a:where(:hover, :focus) {
-  --border-color: var(--text-color);
-}
-
-/* Change border-color and color for the active page */
 nav.navbar [aria-current='page'] {
-  --border-color: var(--text-color);
-  /* --border-color: var(--color-primary);
-  --text-color: var(--color-primary); */
+  --border-color: var(--color-text);
 }
 
 /* Reset button styling */
@@ -105,14 +93,6 @@ nav.navbar span {
   padding-inline-end: var(--space-xs);
 }
 
-nav.navbar svg {
-  height: 100%;
-  width: auto;
-}
 header svg {
-  transform: translateY(-0.1em);
-}
-
-nav.navbar [aria-expanded='true'] svg {
-  transform: var(--nav-list-rotate, rotate(45deg));
+  transform: translateY(.1em);
 }
