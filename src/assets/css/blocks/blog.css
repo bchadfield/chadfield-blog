@@ -14,7 +14,3 @@
 .blog h3 {
   font-size: var(--size-step-1);
 }
-
-.blog time {
-  opacity: 0.8;
-}

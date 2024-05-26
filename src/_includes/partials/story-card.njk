@@ -1,14 +1,19 @@
-    <li class="card clickable-card overflow-hidden">
+    <li class="card">
       <div class="card-content story">
         <h2>
           <a href="{{ story.url | url }}">{{ story.data.title }}</a>
         </h2>
-        <p>{{ story.data.timeline }}</p>
-        {# <p>{{ story.data.characters }}</p> #}
+        <time>{{ story.data.timeline }}</time>
+        
+        {# <p>Characters</p>
         <ul>
           {% for character in story.data.characters %}
             <li>{{ character }}</li>
           {% endfor %}
-        </ul>
+        </ul> #}
+        
+        <a class="text-button" href="{{ story.url | url }}">
+          <span class="link-text">Read</span> <span class="pulse">></span>
+        </a>
       </div>
     </li>

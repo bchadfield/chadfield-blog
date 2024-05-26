@@ -26,7 +26,7 @@
 
 .card h2 a,
 .card h3 a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .card time {

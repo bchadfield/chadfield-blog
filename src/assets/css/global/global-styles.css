@@ -29,11 +29,11 @@ h3 {
 }
 
 /* Set line lengths */
-p,
+/* p,
 li,
 blockquote:not([class]) {
   max-width: 50ch;
-}
+} */
 
 /* h1,
 h2,
@@ -117,4 +117,8 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 
 time {
   font-family: var(--font-display);
+  opacity: 0.8;
+}
+time:before {
+  content: "@"
 }
