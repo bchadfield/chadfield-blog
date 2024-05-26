@@ -4,18 +4,8 @@
   max-width: unset;
 }
 
-.card ::selection {
-  color: var(--color-dark);
-  background: var(--color-secondary);
-}
-
-.card ::selection {
-  color: var(--color-dark);
-  background: var(--color-secondary);
-}
-
 .card .card-image {
-  max-height: 15em;
+  max-height: 90vh;
   overflow: hidden;
 }
 
@@ -32,24 +22,24 @@
 }
 
 .card h2 {
-  font-size: var(--size-step-2);
-  margin-bottom: var(--space-s)
+  font-size: var(--size-step-1);
+  /* margin-bottom: var(--space-s) */
 }
 
 .card h2 a,
 .card h3 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .card time {
   opacity: 0.8;
 }
 
-.card:hover,
+/* .card:hover,
 .card:focus-within {
   border-top-color: var(--color-primary);
   border-bottom-color: var(--color-primary);
-}
+} */
 
 .card a {
   text-decoration: none;

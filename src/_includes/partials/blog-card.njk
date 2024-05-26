@@ -1,12 +1,15 @@
-    <li class="card clickable-card overflow-hidden">
+    <li class="grid card" data-layout="50-50">
       <div class="card-image">
         <img src="/assets/images/posts/{{ post.data.image }}" />
       </div>
-      <div class="card-content">
+      <div class="card-content content-end">
         <h2>
           <a href="{{ post.url | url }}">{{ post.data.title }}</a>
         </h2>
         {% set definedDate = post.date %} {% include "partials/date.njk" %}
-        <p>{{ post.data.description }}</p>
+        <a class="text-button" href="{{ post.url | url }}">
+          <span class="link-text">Read</span> <span class="pulse">></span>
+        </a> 
       </div>
     </li>
+    

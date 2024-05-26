@@ -35,11 +35,11 @@ blockquote:not([class]) {
   max-width: 50ch;
 }
 
-h1,
+/* h1,
 h2,
 h3 {
   max-width: 20ch;
-}
+} */
 
 blockquote {
   border-inline-start: 0.8rem solid var(--color-primary);
@@ -113,4 +113,8 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 
 .preload-transitions * {
   transition: none !important;
+}
+
+time {
+  font-family: var(--font-display);
 }

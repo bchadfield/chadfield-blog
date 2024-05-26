@@ -33,30 +33,6 @@ document.addEventListener('click', e => {
 
 nav.insertBefore(burgerClone, list);
 
-// ------------------- accessible clickable cards solution by Heydon Pickering: https://inclusive-components.design/cards/
-
-const cards = [...document.querySelectorAll('.card')];
-cards.forEach(card => {
-  card.style.cursor = 'pointer';
-  let down,
-    up,
-    link = card.querySelector('a');
-  card.onmousedown = () => (down = +new Date());
-  card.onmouseup = () => {
-    up = +new Date();
-    if (up - down < 200) {
-      link.click();
-    }
-  };
-});
-
-// const darkModeToggle = document.querySelector('#theme-toggle');
-// darkModeToggle.addEventListener('click', () => {
-//   document.body.classList.toggle('dark-mode');
-//   const isDarkMode = document.body.classList.contains('dark-mode');
-//   localStorage.setItem('theme', isDarkMode);
-// });
-
 /* Test early for local storage color scheme value to avoid FOIT */
 const currentColorscheme = localStorage.getItem("theme");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");

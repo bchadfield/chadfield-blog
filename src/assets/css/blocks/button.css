@@ -1,1 +1,33 @@
 /* A blank block because there is *always* a button */
+.text-button {
+    display: block;
+    font-family: var(--font-display);
+}
+
+@keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.text-button .pulse {
+    opacity: 0;
+    font-family: var(--font-base);
+}
+
+.text-button:hover .link-text {
+    text-decoration: underline;
+}
+  
+.text-button:hover .pulse {
+    animation: pulse 1s infinite;
+}
