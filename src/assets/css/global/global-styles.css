@@ -117,6 +117,7 @@ article [href^='http']:not([href*='eleventy-excellent.netlify.app'])::after {
 
 time {
   font-family: var(--font-display);
+  letter-spacing: var(--tracking-s);
   opacity: 0.8;
 }
 time:before {
