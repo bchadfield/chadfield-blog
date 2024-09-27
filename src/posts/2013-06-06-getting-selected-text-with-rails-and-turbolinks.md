@@ -2,7 +2,7 @@
 title: Getting selected text with Rails and Turbolinks
 permalink: /work/getting-selected-text-with-rails-and-turbolinks/
 date: 2013-06-06
-image: selected-text-rails.png
+image: selected-text-rails.jpg
 ---
 I have to start by confessing that I don&#8217;t know what it is about Turbolinks that caused the issue I was having. I&#8217;m only edu-guessing that Turbolinks is the cause.
 

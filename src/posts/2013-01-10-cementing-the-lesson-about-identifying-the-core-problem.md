@@ -2,7 +2,7 @@
 title: Cementing the lesson about identifying the core problem
 permalink: /work/cementing-the-lesson-about-identifying-the-core-problem/
 date: 2013-01-10
-image: identifying-core-problem.png
+image: identifying-core-problem.jpg
 ---
 Sometimes you explain a principle in a simple way that makes it both memorable and easy to understand. Sometimes when when you make this explanation you cement the principle in a new, deep way for yourself. I did this the other day when defending using carefully crafted web copy to sell products instead of feature lists. I was attempting to show that selling a product based on the problem it solves is not a way to trick customers into purchasing.
 

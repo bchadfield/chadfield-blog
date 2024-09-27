@@ -1,7 +1,7 @@
 ---
-title: The Rise of Explainable AI in Cybersecurity
+title: The rise of Explainable AI in cybersecurity
 date: 2024-06-19
-image: explainable-ai-in-cybersecurity.png
+image: explainable-ai-in-cybersecurity.jpg
 permalink: /work/explainable-ai-in-cybersecurity/
 ---
 

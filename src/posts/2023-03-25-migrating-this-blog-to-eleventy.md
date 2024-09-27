@@ -1,8 +1,8 @@
 ---
-title: Migrating this Blog to Eleventy
+title: Migrating this blog to Eleventy
 description: How I went about migrating this blog from Jekyll to Eleventy.
 date: 2023-03-25
-image: migrating-to-11ty.png
+image: migrating-to-11ty.jpg
 permalink: /work/migrating-this-blog-to-eleventy/
 ---
 

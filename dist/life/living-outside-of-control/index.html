@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+      Living outside of control
+      
+    </title>
+    <!-- synchronous js / schema  -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://chadfield.org#website",
+        "url": "https://chadfield.org",
+        "name": "Problem First",
+        "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+ 
+    <!-- include blogpost schema  --><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage"
+    },
+    "isPartOf": {
+      "@id": "https://chadfield.org#website"
+    },
+    "@id": "",
+    "headline": "Living outside of control",
+    "description": "Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.",
+    "image": "https://chadfield.org/assets/images/opengraph-default.jpg",
+    "inLanguage": "en_EN",
+    "publisher": {
+      "@type": "Person",
+      "name": "Ben Chadfield",
+      "url": "https://chadfield.org"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Ben Chadfield"
+    },
+    "datePublished": "2024-09-27T00:00:00.000Z"
+  }
+</script>
+ 
+
+    <!-- synchronous css / inline css  -->
+    <link rel="stylesheet" href="/assets/css/global.css?2e40-c985-80e6" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/notoserif/noto-serif-normal-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/assets/fonts/overpassmono/overpass-mono-normal-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2"
+            as="font"
+            type=font/woff2
+            crossorigin />
+    
+
+    <!-- defered js  -->
+    <script type="module" src="/assets/scripts/app.js?2e40-c985-80e6" defer></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/life/living-outside-of-control/" />
+
+<meta
+  name="description"
+  content="
+  
+  Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life.
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<meta name="robots" content="index,follow" /><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow" /><!-- Google Specific -->
+<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="https://chadfield.org/life/living-outside-of-control/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="https://chadfield.org/life/living-outside-of-control/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Living outside of control"
+/>
+<meta
+  property="og:image"
+  content="https://chadfield.org/assets/images/opengraph-default.jpg"
+/>
+<meta
+  property="og:description"
+  content="Problem First is a blog by Ben Chadfield about Product Management, Leadership, Technology, and Life."
+/>
+<meta property="og:site_name" content="Problem First" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Ben Chadfield" />
+
+<!-- Twitter meta -->
+<meta name="twitter:card" content="summary_large_image" />
+ 
+<meta name="twitter:dnt" content="on" />
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛸</text></svg>">
+
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37077125-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-37077125-1');
+    </script>
+
+
+  </head>
+
+  <body class="relative">
+    <!-- header -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-head" role="banner">
+  <nav id="mainnav" class="navbar" aria-label="Main">
+  <ul>
+    
+    <li>
+      <a
+        class="nav"
+        href="/"
+        
+        >Blog</a
+      >
+    </li>
+    
+    <li>
+      <a
+        class="nav"
+        href="/descendants/"
+        
+        >Descendants</a
+      >
+    </li>
+    
+    <li>
+      <a
+        class="nav"
+        href="/about/"
+        
+        >About</a
+      >
+    </li>
+    
+  </ul>
+</nav>
+
+<!--  template element holding a button that needs to be injected when JavaScript is finally available. based on an article by Manuel Matuzovic, https://web.dev/website-navigation/, see also https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+<template id="burger-template">
+  <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
+    <span>Menu</span>
+    <svg width="24" height="24" aria-hidden="true">
+      <path
+        fill-rule="evenodd"
+        d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+</template>
+
+  <div class="site-head-right">
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" class="nav">Ben Chadfield</a></li>
+      </ul>
+    </nav>
+    <div class="dark-toggle">
+      <label for="toggle" class="toggle__label">
+        <span class="toggle__text">Toggle Dark Mode</span>
+        <input type="checkbox" name="toggle" id="toggle" class="toggle__checkbox"> 
+        <svg width="14" height="14" viewBox="0 0 16 16">
+    <circle pid="0" cx="8" cy="8" r="7.5" fill="var(--color-text)" stroke="var(--color-text)"></circle>
+    <path pid="1" d="M1 8a7 7 0 007 7V1a7 7 0 00-7 7z" fill="var(--color-background)"></path>
+</svg>
+      </label>
+    </div>
+  </div>
+</header>
+
+
+    <!-- content slot -->
+    <main id="main" class="relative">
+<article class="region blog">
+  <div class="wrapper flow">
+    <img class="header" src="/assets/images/posts/living-outside-of-control.jpg" />
+    <div class="wrapper flow prose">
+      <h1>Living outside of control</h1>
+
+       <time datetime="2024-09-27T00:00:00.000Z">September 27, 2024</time>
+
+
+      <p>You can lean away from life. Not push it too hard. This doesn’t make any difference and that’s the point.</p>
+<p>Sometimes though, you want to hit life hard. Get right in it. Shove it along, in one direction or another.</p>
+<p>You won’t know if you’ve ruined your life forever. Or if you’ve put everything in place for all your dreams to come true. What is a ruined life? And what are these dreams coming true? For how long? A week? A year? Then what?</p>
+<p>You can lean away from life. Not push it too hard. Let things settle back down before you hit it again.</p>
+<p>You think like this when you think you’re in control. You’re not. Life hits you, idiot.</p>
+<p>Billions of people make decisions that have nothing to do with you. A moment of attention. A moment of inattention. Then their decisions change your life. Change you. You’re thinking small. You’re thinking about direct decisions people make about whether to hire you or love you. No that’s not it. Think bigger.</p>
+<p>Think about the phone with the dead battery leading to the half acknowledged decision to ask a stranger for the time. Knowing the time leads to hurry, and hurry leads to inattention. Inattention leads to missing an opportunity. Missing an opportunity leaves life open to a different opportunity. Or does that inattention lead to an accident, creating an opportunity, a new direction and a new way of thinking.</p>
+<p>Do you understand yet? You don’t because you can’t let go. You choose what to eat for breakfast so all of life is controlled with choice. Really?</p>
+<p>Control is not a game you play with life. You don’t have it. Think outside yourself. Think bigger than what you can perceive within the walls of the room you occupy. Think of the system of people following lives similar to your own. Think of the systems supporting their lives, providing food, houses and jobs. You go about your life. They do the same.</p>
+<p>These systems are replicated throughout your country. People going to work. People getting food. People seeking entertainment. Copy paste, copy paste, copy paste. Then we have a world. Different flavours of the same systems.</p>
+<p>Can you see it now? You can’t control these systems. You can’t stop people needing food and shelter. You can’t stop people needing to add value to the system to get food and shelter.</p>
+<p>You’re going to think you have a choice about the part you play in the system and whether you can game the system to your advantage. For what? More food? More shelter?</p>
+<p>Do you understand now? There are no ruined lives. There are no dreams coming true. Lies you’re told so you stay in the system. Produce more. Get more. Spend more.</p>
+<p>Your control is limited to how you handle life as it’s happening to you. Do you ride it and get deep into the experience? Or do you hop off and let it flow by? You don’t know what asking the stranger for the time is going to change so let go of that control.</p>
+<p>You’re dead soon anyway. You’ll lie there judging your life and how you lived it. You’re going to get hurt by decisions made by other people. You’re also going to feel joy. You aren’t going to look back and feel satisfaction about all the pain you saved yourself from. Maybe you are. You can worry about your phone dying and see what difference it makes. How will you know your worry is worth it?</p>
+<p>I’m going to remember all the people that thanked me for touching their lives. Thank you for letting me be a part of all your lives. A life of thousands of conversations where I was focused outside myself. The selfish pleasure of helping people.</p>
+
+    </div>
+  </div>
+</article>
+</main>
+
+    <!-- footer -->
+    
+
+<footer class="site-foot" role="contentinfo">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
+
+        &copy; 2024 <a href="/" >Problem First</a>
+        
+      </nav>
+
+      <nav id="social" class="site-foot__inner" aria-label="Social links">
+        
+
+        
+        <a href="https://www.linkedin.com/in/benchadfield/" rel="me" target="_blank">
+          
+          <span class="sr-only">linkedin</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+  ></path>
+  <rect x="2" y="9" width="4" height="12"></rect>
+  <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://github.com/bchadfield" rel="me" target="_blank">
+          
+          <span class="sr-only">github</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+          </a
+          >
+        
+
+        
+        <a href="https://chadfield.org/feed.xml" rel="alternate" type="application/rss+xml" target="_blank">
+        
+          <span class="sr-only">rss</span>
+          <div aria-hidden="true"><svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  focusable="false"
+>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+          </a
+          >
+        
+
+
+        </nav>
+    </div>
+  </div>
+
+  <!-- lang menu -->
+</footer>
+
+
+
+
+    <script lang="javascript">
+      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        console.log("dark")
+        document.body.classList.add('dark-mode')
+      } else {
+        console.log("light")
+        document.body.classList.remove('dark-mode')
+      }
+    </script>
+  </body>
+</html>

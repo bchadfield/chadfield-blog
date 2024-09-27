@@ -2,7 +2,7 @@
 title: PeepCode's Ember tutorial is essential
 permalink: /work/peepcodes-ember-tutorial-is-essential/
 date: 2013-02-16
-image: peepcode-ember-tutorial.png
+image: peepcode-ember-tutorial.jpg
 ---
 From my previous post on <a href="http://chadfield.org/work/my-progress-with-learning-mongo-and-ember" target="_blank">my learning progress</a>, you&#8217;ll know I was running through a few Ember tutorials. Through these I learnt a bit, but I wasn&#8217;t grasping Ember&#8217;s MVC concept with the single model example apps. I was starting to feel like an idiot.
 

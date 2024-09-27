@@ -2,7 +2,7 @@
 title: CS Workflow is now taking registrations of interest
 permalink: /work/cs-workflow-is-now-taking-registrations-of-interest/
 date: 2013-03-14
-image: csworkflow-registration-open.png
+image: csworkflow-registration-open.jpg
 ---
 Copywriters can now register their interest for <a href="http://csworkflow.com" target="_blank">CS Workflow</a>. You can do that here: <a href="http://csworkflow.com" target="_blank">http://csworkflow.com</a>.
 

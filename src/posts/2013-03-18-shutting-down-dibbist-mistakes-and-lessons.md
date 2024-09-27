@@ -2,7 +2,7 @@
 title: 'Shutting down Dibbist: mistakes and lessons'
 permalink: /work/shutting-down-dibbist-mistakes-and-lessons/
 date: 2013-03-18
-image: dibbist-lessons.png
+image: dibbist-lessons.jpg
 ---
 Recently I posted about the results of my <a href="http://chadfield.org/work/my-experiment-with-cold-calling/" title="My experiment with cold calling" target="_blank">cold call experiment</a> for Dibbist. Last week I closed down the online appointment service. I made that decision because I had made a lot of mistakes and wanted to do it right with <a href="http://csworkflow.com" title="CS Workflow landing page" target="_blank">CS Workflow</a>. So what were these mistakes?
 

@@ -2,7 +2,7 @@
 title: Waiting to meet my daughter
 permalink: /life/waiting-to-meet-my-daughter/
 date: 2013-02-02
-image: waiting-for-daughter.png
+image: waiting-for-daughter.jpg
 ---
 About 10 days have past since we found out that we&#8217;re having a girl. We were waiting for over 3 months to find out. Waiting until the birth didn&#8217;t make sense. I still can&#8217;t imagine what it&#8217;s going to be like having this new person in our life. I&#8217;ve managed to avoid being around babies more almost my entire life. Vicky will make sure I&#8217;m not useless, and her family will be living in Melbourne by the time she&#8217;s due. That&#8217;s June, by the way. June 12th at this stage.
 

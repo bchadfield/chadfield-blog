@@ -2,7 +2,7 @@
 title: Why I love giving feedback
 permalink: /work/why-i-love-giving-feedback/
 date: 2013-11-22
-image: love-feedback.png
+image: love-feedback.jpg
 ---
 I suck at following my own advice. <a href="http://csworkflow.com" target="_blank">CS Workflow&#8217;s website</a> is pretty bad, we&#8217;re not active on social media and the amount of content we&#8217;re producing is only slightly more than none (there&#8217;s good stuff in the pipeline).
 
