@@ -1,5 +1,5 @@
 @media (min-width: 48em) {
-  nav.navbar {
+  nav.navbar.menu {
     --nav-button-display: none;
     --nav-position: static;
   }
@@ -24,14 +24,14 @@
 }
 
 nav.navbar {
-  position: var(--nav-position, absolute);
+  /* position: var(--nav-position, absolrelatiute); */
   /* inset-block-start: 0.5rem; */
-  inset-inline-end: 0.1rem;
+  /* inset-inline-end: 0.1rem; */
 }
 
 nav.navbar ul {
-  background: var(--nav-list-background, var(--color-light));
-  box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
+  background: var(--nav-list-background, var(--color-background)); 
+  /* box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2)); */
   display: flex;
   flex-direction: var(--nav-list-layout, column);
   flex-wrap: wrap;
@@ -41,14 +41,23 @@ nav.navbar ul {
   margin: 0;
   padding: var(--nav-list-padding, 2rem);
   position: var(--nav-list-position, fixed);
-  inset-block-start: 0; /* Logical property. Equivalent to top: 0; */
-  inset-inline-end: 0; /* Logical property. Equivalent to right: 0; */
+  inset-block-start: 3.5rem; /* Logical property. Equivalent to top: 0; */
+  inset-inline-start: 0; /* Logical property. Equivalent to right: 0; */
   width: var(--nav-list-width, min(22rem, 100vw));
   visibility: var(--nav-list-visibility, visible);
 }
 
+.site-head-right nav.navbar ul {
+  inset-block-start: 0;
+  --nav-list-background: transparent;
+  --nav-list-position: static;
+  --nav-list-padding: 0;
+  --nav-list-height: auto;
+  --nav-list-width: 100%;
+} 
+
 nav.navbar [aria-expanded='false'] + ul {
-  transform: var(--nav-list-transform, translateX(100%));
+  transform: var(--nav-list-transform, translateX(-100%));
   visibility: var(--nav-list-visibility, hidden);
 }
 
