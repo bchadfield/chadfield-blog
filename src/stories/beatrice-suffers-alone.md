@@ -5,9 +5,9 @@ characters: ["Beatrice Williams"]
 ---
 Today was the same as yesterday. Tomorrow will be the same as today. Every day is the same as the last and as the next. There’s safety in the sameness. There are no surprises. 
 
-Like finding out by letter that Gordon wasn’t coming home from France, killed in some horrific fashion. So many boys didn’t come home, killed just as horrifically. So many lives ended too soon by this war. War is a good reason that doesn’t make any sense. So many women received those heartbreaking letters. So many more women watching this war stealing their future husbands and children and everything that they were brought up to want. Their lives not over but felt like they’d ended just the same.
+Like finding out by letter that Gordon wasn’t coming home from France, killed in some horrific fashion. So many boys didn’t come home, killed just as horrifically. So many lives ended too soon by this war. War is a good reason that doesn’t make any sense. So many women reading those heartbreaking letters. So many women watching this war stealing their future. Their husbands and children that would never be. Their lives not over but felt like they’d ended just the same.
 
-What do you do when the one you love and depend upon doesn’t exist anymore? There are only two choices: you give up or you don’t. These aren’t opposites. One you crumble. One you hold yourself together long enough to make it to the next part of the day. Eventually you make it to the end of the day. And this is why everyday feels the same. 
+What do you do when the one you love and depend upon is gone forever? There are only two choices: you give up or you don’t. These aren’t opposites. One you crumble. One you hold yourself together long enough to make it to the next part of the day. Finish this chore and start another. Eventually you make it to the end of the day. Tomorrow will be the same as today.
 
 Beatrice doesn’t have a choice. Everyone needs her and there’s no one to help her look after her two children. She was pregnant with Eleanor when she received the news about Gordon. Eleanor will turn six soon. She dresses herself when given the right clothes to wear. Daniel helps when he knows what to do and isn't in an unhelpful mood.
 
