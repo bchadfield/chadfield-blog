@@ -61,7 +61,7 @@
  
 
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?28cc-bbba-8e03" />
+    <link rel="stylesheet" href="/assets/css/global.css?0f43-a7e8-0bb2" />
 
     <!-- preloads -->
     <link
@@ -89,7 +89,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?28cc-bbba-8e03" defer></script>
+    <script type="module" src="/assets/scripts/app.js?0f43-a7e8-0bb2" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/how-i-migrated-from-wordpress-to-jekyll/" />
@@ -106,7 +106,7 @@
 <meta name="theme-color" content="#DD4462" />
 <meta name="robots" content="index,follow" /><!-- All Search Engines -->
 <meta name="googlebot" content="index,follow" /><!-- Google Specific -->
-<meta name="generator" content="Eleventy v2.0.0" /><!-- thank you, Zach -->
+<meta name="generator" content="Eleventy v3.0.0" /><!-- thank you, Zach -->
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no" />
 <!-- Helps prevent duplicate content issues -->
@@ -316,7 +316,52 @@ preview template builder to get the markup and css.<br>
 <p>By default Jekyll generates the site in the <code>_site</code> folder. For CS Workflow I'd set the build destination to a different directory which used its own git repository. This time I kept the source and generated site together.</p>
 <p>The trade off of managing a single repository is that I'm deploying the source files to the web server and not just the static site. I point the web server to <code>/chadfield-blog/_site</code> instead of <code>/chadfield-blog</code> and have a few extra kilobytes on the server.</p>
 <p>All I needed to do was add the site to the Nginx config, restart Nginx, and point the domain name at the server IP address.</p>
-<pre class="language-nginx"><code class="language-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span><br> <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">server_name</span> www.chadfield.org</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">rewrite</span> ^ http://chadfield.org<span class="token variable">$request_uri?</span> permanent</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span><br> <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">server_name</span> chadfield.org</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">root</span> /home/deployer/chadfield-blog/_site</span><span class="token punctuation">;</span><br> <span class="token directive"><span class="token keyword">index</span> index.html</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><br>> Finished migrating my Wordpress blog to Jekyll. Here’s the result<br>> [http://t.co/mh7jjG3fpk][30]<br>><br>> — Ben Chadfield (@benchadfield) [June 29, 2014][31]<br><br><span class="token comment">###  Publishing workflow</span><br><br>Obviously, the steps to get new content published is different to Wordpress. I\'ll lay out the steps needs and what I\'ve done to make it easier.<br><br>1.  Write a new post.<br>2.  Create a new Markdown file in the `_posts` folder.<br>3.  Add meta-data and content to the Markdown file.<br>4.  Run `jekyll serve` and test locally that everything is okay.<br>5.  Commit changes to git using `git add -A`.<br>6.  Push local git repository to Github using `git push origin master`.<br>7.  ssh into the server and run `git pull` in the site directory.<br>8.  Check on my site that the changes are okay.<br><br>I automate steps 5, 6, and 7 using a rakefile. I use [CS Workflow][5] to write, get reviews, and export meta-data to Markdown.<br><br>```ruby<br>desc "Commit changes to website repo"<br>task :commit do<br>	puts "Committing..."<br>  exec "git add -A &amp;&amp; git commit -m 'Site update' &amp;&amp; git push origin master"<br>end<br><br>desc "Update code in production"<br>	task :update do<br>  puts "Updating production..."<br>  exec "ssh user@server.com 'cd site-directory &amp;&amp; git pull'"<br>end</code></pre>
+<pre class="language-nginx"><code class="language-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+ <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">server_name</span> www.chadfield.org</span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">rewrite</span> ^ http://chadfield.org<span class="token variable">$request_uri?</span> permanent</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+ <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">server_name</span> chadfield.org</span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">root</span> /home/deployer/chadfield-blog/_site</span><span class="token punctuation">;</span>
+ <span class="token directive"><span class="token keyword">index</span> index.html</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+> Finished migrating my Wordpress blog to Jekyll. Here’s the result
+> [http://t.co/mh7jjG3fpk][30]
+>
+> — Ben Chadfield (@benchadfield) [June 29, 2014][31]
+
+<span class="token comment">###  Publishing workflow</span>
+
+Obviously, the steps to get new content published is different to Wordpress. I\'ll lay out the steps needs and what I\'ve done to make it easier.
+
+1.  Write a new post.
+2.  Create a new Markdown file in the `_posts` folder.
+3.  Add meta-data and content to the Markdown file.
+4.  Run `jekyll serve` and test locally that everything is okay.
+5.  Commit changes to git using `git add -A`.
+6.  Push local git repository to Github using `git push origin master`.
+7.  ssh into the server and run `git pull` in the site directory.
+8.  Check on my site that the changes are okay.
+
+I automate steps 5, 6, and 7 using a rakefile. I use [CS Workflow][5] to write, get reviews, and export meta-data to Markdown.
+
+```ruby
+desc "Commit changes to website repo"
+task :commit do
+	puts "Committing..."
+  exec "git add -A &amp;&amp; git commit -m 'Site update' &amp;&amp; git push origin master"
+end
+
+desc "Update code in production"
+	task :update do
+  puts "Updating production..."
+  exec "ssh user@server.com 'cd site-directory &amp;&amp; git pull'"
+end</code></pre>
 <p>To use that copy into <code>rakefile.rb</code> and change the ssh details and site directory. Then all I need to do is run <code>rake commit</code> and <code>rake update</code>.</p>
 <p>Hopefully you found that helpful. There’s plenty of gaps, which is why I’ve called it titled it as how I migrated rather than a general how to. Really there’s not much to improve on the how to I referenced. Feel free to ask any questions or offer improvements I could make.</p>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
