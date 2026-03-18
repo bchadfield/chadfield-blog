@@ -1,5 +1,3 @@
-{% set assetHash = global.random() %}
-
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
   <head>
@@ -22,8 +20,16 @@
     <!-- include blogpost schema  -->
     {%- include "schemas/blogpost-schema.njk" %} {% endif %}
 
+    <script>
+      const theme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.setAttribute('dark', '');
+      }
+    </script>
+
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
 
     <!-- preloads -->
     <link
@@ -52,13 +58,11 @@
     {% endif %}
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
+    <script type="module" src="/assets/scripts/app.js" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}
 
-    
-    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN8KY7L9JS"></script>
     <script>
@@ -68,9 +72,6 @@
 
       gtag('config', 'G-HN8KY7L9JS');
     </script>
-
-
-
   </head>
 
   <body class="relative">
@@ -82,15 +83,5 @@
 
     <!-- footer -->
     {% include "partials/footer.njk" %}
-
-    <script lang="javascript">
-      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        console.log("dark")
-        document.body.classList.add('dark-mode')
-      } else {
-        console.log("light")
-        document.body.classList.remove('dark-mode')
-      }
-    </script>
   </body>
 </html>

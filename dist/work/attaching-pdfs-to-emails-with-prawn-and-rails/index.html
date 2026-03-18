@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -60,8 +58,16 @@
 </script>
  
 
+    <script>
+      const theme = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.setAttribute('dark', '');
+      }
+    </script>
+
     <!-- synchronous css / inline css  -->
-    <link rel="stylesheet" href="/assets/css/global.css?1557-016d-06f9" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
 
     <!-- preloads -->
     <link
@@ -89,7 +95,7 @@
     
 
     <!-- defered js  -->
-    <script type="module" src="/assets/scripts/app.js?1557-016d-06f9" defer></script>
+    <script type="module" src="/assets/scripts/app.js" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     <base href="/work/attaching-pdfs-to-emails-with-prawn-and-rails/" />
@@ -144,8 +150,6 @@
 <!-- Favicon -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛸</text></svg>">
 
-    
-    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN8KY7L9JS"></script>
     <script>
@@ -155,9 +159,6 @@
 
       gtag('config', 'G-HN8KY7L9JS');
     </script>
-
-
-
   </head>
 
   <body class="relative">
@@ -239,7 +240,8 @@
 <p>What I ended up with was a simple signup for copywriters. This generates a token that, when part of a URL, associates the brief with the copywriter. The briefs are a tableless model and are only saved as an attached PDF that is sent to the copywriter. Simple.</p>
 <p>I decided to use Prawn over the other options after watching the <a href="http://railscasts.com/episodes/153-pdfs-with-prawn-revised" target="_blank">railscast</a> (requires pro subscription) on the topic. It gave me the most control over the rendered PDF. For this project I used Rail 4.0.0.beta1.</p>
 <p>To start I added Prawn to my Gemfile and ran bundle. The latest version was 0.12.0 at writing.</p>
-<pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">'prawn'</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">'~> 0.12.0'</span></span></code></pre>
+<pre class="language-ruby"><code class="language-ruby">gem <span class="token string-literal"><span class="token string">'prawn'</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">'~> 0.12.0'</span></span>
+</code></pre>
 <p>I found out that through an error message that Rails 4 already has the PDF mimetype registered, so that part of the railscast can be skipped.</p>
 <p>I rendered a test PDF in the browser so I could make sure it looked how I wanted before attaching it to an email. Refreshing the browser displayed the changes. To get this working I created a ‘test’ action in my briefs controller and added that as a route.</p>
 <pre class="language-elixir"><code class="language-elixir"><span class="token keyword">def</span> test
@@ -253,7 +255,8 @@
                             <span class="token attr-name">disposition:</span> <span class="token string">"inline"</span>
     <span class="token keyword">end</span>
   <span class="token keyword">end</span>
-<span class="token keyword">end</span></code></pre>
+<span class="token keyword">end</span>
+</code></pre>
 <p>Following the same pattern as the railscast, I created a <a href="https://gist.github.com/bchadfield/5274166" target="_blank">BriefsPdf class</a> that inherited from Prawn::Document. This initializes, taking the arguments, which are my objects, then calls methods that render boxes and text. It’s a bit hacked together, but you get the picture. I kept the <a href="http://chadfield.org/assets/brief.pdf" target="_blank">testing output</a>, so that’s what the class renders.</p>
 <p>The biggest “gotcha” I came across was with using bounding boxes and text boxes. The cursor, which moves down the page as it renders, behaves differently with those boxes. I ran into trouble with my two bounding boxes, because if the cursor is moved to the bottom of the right box. If the left box is higher I got overlap. With text boxes the cursor doesn’t move down at all. You have to move it manually with move_down. This is fine if you know the height of the box. With user input you don’t have control. That’s why I’m not using text boxes.</p>
 <p>The mailer is the simplest part of the whole process.</p>
@@ -265,7 +268,8 @@
   <span class="token function">mail</span><span class="token punctuation">(</span><span class="token attr-name">to:</span> <span class="token attribute variable">@user</span><span class="token punctuation">.</span>email<span class="token punctuation">,</span>
        <span class="token attr-name">cc:</span> <span class="token attribute variable">@brief</span><span class="token punctuation">.</span>email<span class="token punctuation">,</span>
        <span class="token attr-name">subject:</span> <span class="token string">"New brief from <span class="token interpolation"><span class="token delimiter punctuation">#{</span><span class="token attribute variable">@brief</span><span class="token punctuation">.</span>name<span class="token delimiter punctuation">}</span></span>"</span><span class="token punctuation">)</span>
-<span class="token keyword">end</span></code></pre>
+<span class="token keyword">end</span>
+</code></pre>
 <p>I’m using a dynamic file name for the PDF, so the client and copywriter have a reference. The actual attachment is a single line.</p>
 <p>There you have it. I’ll be using this same technique for creating invoices and subscription agreements.</p>
 <p>Here’s the list of resources that guided me:</p>
@@ -383,15 +387,5 @@
 
 
 
-
-    <script lang="javascript">
-      if (localStorage.theme === 'true' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        console.log("dark")
-        document.body.classList.add('dark-mode')
-      } else {
-        console.log("light")
-        document.body.classList.remove('dark-mode')
-      }
-    </script>
   </body>
 </html>
