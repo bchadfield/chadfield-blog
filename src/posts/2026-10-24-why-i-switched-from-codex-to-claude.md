@@ -5,51 +5,42 @@ image: switching-to-claude.jpg
 permalink: /work/why-i-switched-from-codex-to-claude/
 ---
 
-I built Neighbourhood Finder with Codex. The backend, the web app, and the data pipelines that turn public datasets into neighbourhood reports. Around two hundred commits, almost all of them written in the evenings around a day job.
+I built Neighbourhood Finder with Codex. The backend, the web app, the data pipelines and supporting tools to process public data into neighbourhood reports. A couple hundred commits written in the evenings. Each commit or two being the result of a development session.
 
-I didn't expect to switch. A tool you've built a product with has a pull. You learn its habits, where it goes wrong, and how to phrase things so it doesn't. Starting again with something else feels like a cost you don't need to pay.
+I use Claude all day at CybSafe, so I have a direct way to compare Claude and Codex.
 
-Then I started working on Customer Engine.
+I originally chose Codex because I could get the most done within the available limits. GPT-5 came out shortly after I started so the models were getting better. GPT-5.2 could write migrations that succeeded first time.
 
-The idea is simple. Independent trades, starting with EV charger installers, should be able to give their customers the kind of experience big national companies offer. A homeowner is guided through the job on the installer's own website and sees an indicative price and installation time, instead of filling in a basic enquiry form and waiting.
+I wasn't expecting to switch from Codex to Claude. Both Claude and Codex gave me what I needed. I was working on the assumption that Codex could give me more.
 
-Before building the product, I needed to know whether installers wanted it. That meant a landing page and a short film showing how it works. Both had to look like something a business would trust with its customers. Not a side project.
+Then Anthropic released Opus 5.5 and OpenAI released Astra. I ask new models to review the active projects and methodologies. Astra gave some good insights based on the global view of success rather than at the individual project level. The insights felt deeper and were presented more clearly than before. Astra helped me work through a new idea, taking care of the desktop research and asking useful rubber ducking questions.
 
-## Testing on real work
+The problem was that Astra sucked through the session usage so quickly that I was constantly stuck. I'm usually doing 3 or 4 things at the same time in a session. At the same time, I saw an improvement in how much session usage Opus 5.5 consumed.
 
-Shortly after Opus 5.5 came out, I tried it on that work alongside Astra, OpenAI's flagship model.
+My plan was to use Codex and Claude together to expand my available usage and test what Opus could bring my projects.
 
-It wasn't close. Opus used fewer tokens to get there, and the output was leagues ahead in polish and in the level it was working at.
+The first real test was a short explainer video for that new idea. Before building anything, I wanted something I could show people to see if the idea made sense to them. I gave Astra and Opus the same concept and the same brief.
 
-Here are the two films. Same product, same brief, a week apart.
+Astra was strong on the research. The video was different. It needed detailed feedback and many iterations to get close to what I wanted. Opus was better immediately. It used fewer tokens and the output was leagues ahead in polish and in the level it was working at. Opus went directly to what I was after and beyond.
+
+Here are the two videos.
 
 <div class="grid" data-layout="50-50" style="--grid-min-item-size: 14rem">
   <figure>
-    <iframe class="youtube-embed" width="100%" src="https://player.vimeo.com/video/1239140908" title="Trade overview film made with Codex" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    <figcaption>Codex with Astra, 27 September</figcaption>
+    <iframe class="youtube-embed" width="100%" src="https://player.vimeo.com/video/1239140908" title="Explainer video made with Codex and Astra" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <figcaption>Codex with Astra</figcaption>
   </figure>
   <figure>
-    <iframe class="youtube-embed" width="100%" src="https://player.vimeo.com/video/1232593124" title="Trade overview film made with Claude Code" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-    <figcaption>Claude Code with Opus 5.5, 3 October</figcaption>
+    <iframe class="youtube-embed" width="100%" src="https://player.vimeo.com/video/1232593124" title="Explainer video made with Claude Code and Opus 5.5" frameborder="0" allow="fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    <figcaption>Claude Code with Opus 5.5</figcaption>
   </figure>
 </div>
 
-Fewer tokens matters more than it sounds. I get two or three hours on a weekday evening. A model that gets to a better result with less back and forth gives me more of those hours back.
+Fewer tokens matters more to me than it sounds. Fewer tokens is fewer iterations. Fewer iterations means I get more done in a session. More done is closer to my goals.
 
-The polish mattered more. The landing page and film were the first things installers would see. If they looked unfinished, the experiment would be testing my design skills, not whether the idea was any good.
+It's hard to quantify the productivity increase I got with Opus over Astra. For anything creative, like video production, writing or website development, I'm getting about a 5x improvement. Most things Opus produces are good enough on the first attempt.
 
-## What changed
+I don't see any significant improvement in app development on either the frontend or backend. That is less of a loss than you might think. In a typical month, about 80% of my effort goes on research, content production and automating marketing tasks. Only about 20% is app development. The gains land where most of my time goes.
 
-I haven't used Codex since.
+Very quickly I got bored with splitting work between Codex and Claude. I found myself using Claude for everything and cancelled my Codex plan. This step felt significant for me after using Codex for so long. It wasn't the same as firing a teammate after hiring someone better, but close.
 
-Claude now builds the Trade product. It also does most of the work around it: researching installers, checking them against Companies House, drafting outreach, testing different ways of positioning the offer, and keeping records of what's been sent and what came back. I approve anything that goes out under my name.
-
-That's a lot more than writing code. It's closer to having a small team that works when I do.
-
-## Don't get attached to your tools
-
-The lesson I took from this isn't that one model is better than another. That will change, probably soon.
-
-It's that the tool you built your last thing with isn't automatically the right one for the next. The only way to know is to compare them on the same terms, on real work that matters to you, and be willing to act on what you see.
-
-It's the same way I try to think about bigger decisions. Make the trade-offs visible, compare consistently, then commit. Switching cost me a little familiarity. It gave me back time and a better result, and for a side project run in the evenings, that's the trade that matters.
