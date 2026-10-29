@@ -36,7 +36,7 @@ export default defineSite({
     ]
   },
   async build(site) {
-    assets.css = await site.css("src/assets/css/global.css", { output: "assets/css/global.css", build: buildCss });
+    assets.css = await site.css("src/assets/css/global.css", { output: "assets/css/global.css", build: buildCss, minify: false });
     assets.js = await site.script("src/assets/scripts/app.js", { output: "assets/scripts/app.js", format: "iife" });
 
     const posts = await site.load(
