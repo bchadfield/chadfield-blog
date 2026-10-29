@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "Ben Chadfield",
   "dependencies": {
-    "hotpress": "file:../hotpress"
+    "@benchadfield/hotpress": "^0.1.0"
   },
   "devDependencies": {
     "@11ty/posthtml-urls": "^1.0.0",

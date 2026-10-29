@@ -1,7 +1,7 @@
 // Page layouts, ported from the Nunjucks templates (base, page, post, story, home, descendants).
 // Metadata output matches the previous build exactly, including its whitespace, so search
 // engines see no change. Body markup is equivalent.
-import { raw, usePage, type Child, type Entry } from "hotpress";
+import { raw, usePage, type Child, type Entry } from "@benchadfield/hotpress";
 import { meta, navigation, social } from "./data.ts";
 import darkModeSvg from "./svg/dark-mode.svg";
 import githubIcon from "./icons/social-github.svg";

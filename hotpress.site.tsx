@@ -1,5 +1,5 @@
 // chadfield.org: posts, Descendants stories and standalone pages from Markdown.
-import { absoluteUrl, atom, defineSite, markdown, robots, s, sitemaps, type Entry } from "hotpress";
+import { absoluteUrl, atom, defineSite, markdown, robots, s, sitemaps, type Entry } from "@benchadfield/hotpress";
 import { buildCss } from "./src/site/css.ts";
 import { meta } from "./src/site/data.ts";
 import { absolutizeFeedHtml } from "./src/site/feed.ts";
