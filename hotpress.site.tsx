@@ -26,6 +26,15 @@ interface Item {
 export default defineSite({
   origin: meta.url,
   compat: "2026-10-29",
+  check: {
+    // Known issues carried over from the Eleventy site, kept for SEO parity. Fix, then remove.
+    allow: [
+      // <link rel="author" href="humans.txt"> is relative, and <base href> makes it /<page>/humans.txt.
+      "link-broken:/**/humans.txt",
+      // The default OG image has never existed.
+      "link-broken:/assets/images/opengraph-default.jpg"
+    ]
+  },
   async build(site) {
     assets.css = await site.css("src/assets/css/global.css", { output: "assets/css/global.css", build: buildCss });
     assets.js = await site.script("src/assets/scripts/app.js", { output: "assets/scripts/app.js", format: "iife" });
