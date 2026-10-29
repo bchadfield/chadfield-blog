@@ -1,5 +1,6 @@
 ---
 title: Beatrice suffers alone
+date: 2023-12-21T22:56:29Z
 timeline: 100 years ago
 characters: ["Beatrice Williams"]
 ---

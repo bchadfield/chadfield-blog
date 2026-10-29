@@ -1,31 +1,27 @@
 {
-  "name": "problem-first-blog",
+  "name": "chadfield-blog",
   "version": "1.0.0",
   "engines": {
-    "node": ">=16.x.x"
+    "node": ">=22.12.0"
   },
-  "description": "Problem First Blog",
-  "main": ".eleventy.js",
+  "description": "chadfield.org, built with Hotpress",
   "scripts": {
-    "clean": "rimraf dist .cache/assets",
-    "assets:build": "node scripts/build-assets.js",
-    "dev": "node scripts/dev.js",
-    "build": "node scripts/build-assets.js && eleventy"
+    "dev": "hotpress dev",
+    "build": "hotpress build",
+    "serve": "hotpress serve",
+    "check": "hotpress check",
+    "publish": "hotpress publish"
   },
   "keywords": [],
   "author": "Ben Chadfield",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "tailwindcss": "^3.4.19"
+    "hotpress": "file:../hotpress"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^2.0.3",
+    "@11ty/posthtml-urls": "^1.0.0",
     "@toycode/markdown-it-class": "^1.2.4",
     "autoprefixer": "^10.4.13",
     "cssnano": "^7.1.3",
-    "dayjs": "^1.11.13",
-    "esbuild": "^0.25.2",
-    "html-minifier-terser": "^7.2.0",
     "markdown-it": "^14.1.1",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-anchor": "^8.6.5",
@@ -38,19 +34,11 @@
     "postcss-import": "^15.0.0",
     "postcss-import-ext-glob": "^2.0.1",
     "postcss-js": "^4.0.0",
-    "rimraf": "^6.0.1",
-    "slugify": "^1.6.5"
+    "posthtml": "^0.16.6",
+    "slugify": "^1.6.5",
+    "tailwindcss": "^3.4.19"
   },
   "overrides": {
-    "flatted": "^3.4.2",
-    "glob": {
-      "minimatch": "^10.2.3"
-    },
-    "liquidjs": "^10.27.0",
-    "maximatch": {
-      "minimatch": "^3.1.5"
-    },
-    "postcss-selector-parser": "^7.1.6",
-    "svgo": "^4.0.1"
+    "postcss-selector-parser": "^7.1.6"
   }
 }

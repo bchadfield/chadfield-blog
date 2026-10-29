@@ -1,5 +1,6 @@
 ---
 title: Brennus loses his son
+date: 2024-08-28T23:21:12Z
 timeline: 2000 years ago
 characters: ["Brennus Anvatenos", "Cador Anvatenos"]
 ---

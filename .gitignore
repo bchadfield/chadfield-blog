@@ -1,12 +1,9 @@
 # Node modules
 node_modules
 
-# generated files
-src/_includes/css
-src/_includes/scripts
-
-# cache
-.cache
+# Build output and cache: the site is built in CI, never committed
+dist
+.hotpress-cache
 
 # secret data
 .env

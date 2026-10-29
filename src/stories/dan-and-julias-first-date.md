@@ -1,5 +1,6 @@
 ---
 title: Dan and Julia's first date
+date: 2024-04-29T23:28:40Z
 timeline: Modern day
 characters: ["Julia Taylor", "Dan Turner"]
 ---
