@@ -227,6 +227,17 @@
   
 
     <url>
+        <loc>https://chadfield.org/</loc>
+        <lastmod>2023-01-15T22:09:27.000Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
         <loc>https://chadfield.org/work/migrating-this-blog-to-eleventy/</loc>
         <lastmod>2023-03-25T00:00:00.000Z</lastmod>
     </url>
@@ -239,7 +250,7 @@
 
     <url>
         <loc>https://chadfield.org/about/</loc>
-        <lastmod>2023-12-21T22:57:48.564Z</lastmod>
+        <lastmod>2023-12-21T22:56:29.000Z</lastmod>
     </url>
     
   
@@ -250,18 +261,7 @@
 
     <url>
         <loc>https://chadfield.org/descendants/</loc>
-        <lastmod>2023-12-21T22:57:48.565Z</lastmod>
-    </url>
-    
-  
-  
-
-  
-  
-
-    <url>
-        <loc>https://chadfield.org/</loc>
-        <lastmod>2023-12-21T22:57:48.565Z</lastmod>
+        <lastmod>2023-12-21T22:56:29.000Z</lastmod>
     </url>
     
   
@@ -272,7 +272,7 @@
 
     <url>
         <loc>https://chadfield.org/stories/beatrice-suffers-alone/</loc>
-        <lastmod>2023-12-21T22:57:48.576Z</lastmod>
+        <lastmod>2023-12-21T22:56:29.000Z</lastmod>
     </url>
     
   
@@ -283,7 +283,7 @@
 
     <url>
         <loc>https://chadfield.org/stories/julia-tells-dan-shes-pregnant/</loc>
-        <lastmod>2023-12-21T22:57:48.576Z</lastmod>
+        <lastmod>2023-12-21T22:56:29.000Z</lastmod>
     </url>
     
   
@@ -294,7 +294,7 @@
 
     <url>
         <loc>https://chadfield.org/stories/dan-and-julias-first-date/</loc>
-        <lastmod>2024-05-24T22:49:54.656Z</lastmod>
+        <lastmod>2024-04-29T23:28:40.000Z</lastmod>
     </url>
     
   
@@ -305,7 +305,7 @@
 
     <url>
         <loc>https://chadfield.org/stories/julia-gives-birth-to-evan/</loc>
-        <lastmod>2024-05-24T22:50:43.033Z</lastmod>
+        <lastmod>2024-05-24T22:53:24.000Z</lastmod>
     </url>
     
   
@@ -326,8 +326,8 @@
   
 
     <url>
-        <loc>https://chadfield.org/life/living-outside-of-control/</loc>
-        <lastmod>2024-09-27T00:00:00.000Z</lastmod>
+        <loc>https://chadfield.org/stories/brennus-loses-his-son/</loc>
+        <lastmod>2024-08-28T23:21:12.000Z</lastmod>
     </url>
     
   
@@ -337,8 +337,8 @@
   
 
     <url>
-        <loc>https://chadfield.org/stories/brennus-loses-his-son/</loc>
-        <lastmod>2024-09-27T22:23:17.315Z</lastmod>
+        <loc>https://chadfield.org/life/living-outside-of-control/</loc>
+        <lastmod>2024-09-27T00:00:00.000Z</lastmod>
     </url>
     
   
@@ -360,7 +360,7 @@
 
     <url>
         <loc>https://chadfield.org/stories/lily-starts-work/</loc>
-        <lastmod>2025-06-26T20:54:47.025Z</lastmod>
+        <lastmod>2025-06-26T20:59:34.000Z</lastmod>
     </url>
     
   
