@@ -1,5 +1,6 @@
 ---
 title: Julia tells Dan she's pregnant
+date: 2023-12-21T22:56:29Z
 timeline: Modern day
 characters: ["Julia Taylor", "Dan Turner"]
 ---

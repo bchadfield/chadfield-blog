@@ -1,9 +1,0 @@
-
-/* TEAM */
-Developer: Ben Chadfield
-Contact: 
-Site: https://chadfield.org
-
-
-/* SITE */
-Doctype: HTML5

@@ -1,5 +1,6 @@
 ---
 title: Lily starts work
+date: 2025-06-26T20:59:34Z
 timeline: 100 years future
 characters: ["Lily Turner"]
 ---

@@ -1,6 +1,7 @@
 ---
 permalink: /about/index.html
 title: 'About Ben Chadfield'
+date: 2023-12-21T22:56:29Z
 description: 'About Ben Chadfield and Product Management, Leadership, Technology, and Life.'
 layout: 'page'
 ---
